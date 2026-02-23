@@ -1,3 +1,6 @@
+# macOS
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -125,3 +128,8 @@ Scripts/rst2s5.py
 Scripts/rst2xetex.py
 Scripts/rst2xml.py
 Scripts/rstpep2html.py
+
+# AI Dev
+.cursor/
+ai-dev/
+AGENTS.md
