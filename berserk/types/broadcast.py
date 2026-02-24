@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List
+from typing import Dict, List
 
 from typing_extensions import NotRequired, TypedDict
 
@@ -104,3 +104,54 @@ class BroadcastsByUser(TypedDict):
     previousPage: int | None
     nextPage: int | None
     nbPages: int
+
+
+class BroadcastTournamentPlayerOpponent(TypedDict):
+    name: str
+    title: NotRequired[str]
+    rating: NotRequired[int]
+    fideId: NotRequired[int]
+    team: NotRequired[str]
+    fed: NotRequired[str]
+
+
+class BroadcastTournamentPlayerGame(TypedDict):
+    round: str
+    id: str
+    opponent: BroadcastTournamentPlayerOpponent
+    color: str
+    fideTC: NotRequired[str]
+    points: str
+    ratingDiff: NotRequired[int]
+
+
+class BroadcastTournamentPlayerFideRatings(TypedDict):
+    standard: NotRequired[int]
+    rapid: NotRequired[int]
+    blitz: NotRequired[int]
+
+
+class BroadcastTournamentPlayerFide(TypedDict):
+    year: NotRequired[int]
+    ratings: NotRequired[BroadcastTournamentPlayerFideRatings]
+    follow: NotRequired[bool]
+
+
+class BroadcastTournamentPlayer(TypedDict):
+    """A single player in a broadcast tournament (GET /broadcast/{id}/players/{playerId})."""
+
+    name: str
+    title: NotRequired[str]
+    rating: NotRequired[int]
+    fideId: NotRequired[int]
+    team: NotRequired[str]
+    fed: NotRequired[str]
+    played: NotRequired[int]
+    score: NotRequired[float]
+    ratingDiff: NotRequired[int]
+    ratingsMap: NotRequired[Dict[str, int]]
+    ratingDiffs: NotRequired[Dict[str, int]]
+    performance: NotRequired[int]
+    performances: NotRequired[Dict[str, int]]
+    fide: NotRequired[BroadcastTournamentPlayerFide]
+    games: NotRequired[List[BroadcastTournamentPlayerGame]]

@@ -12,6 +12,7 @@ from .account import (
 from .broadcast import (
     BroadcastPlayer,
     BroadcastTop,
+    BroadcastTournamentPlayer,
     PaginatedBroadcasts,
     BroadcastsByUser,
 )
@@ -37,6 +38,7 @@ __all__ = [
     "ArenaResult",
     "BroadcastPlayer",
     "BroadcastsByUser",
+    "BroadcastTournamentPlayer",
     "BroadcastTop",
     "BulkPairing",
     "BulkPairingGame",
