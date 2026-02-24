@@ -104,3 +104,34 @@ class BroadcastsByUser(TypedDict):
     previousPage: int | None
     nextPage: int | None
     nbPages: int
+
+
+# Types for GET /broadcast/{id}/teams/standings (team leaderboard of a broadcast)
+
+
+class BroadcastTeamStandingsMatch(TypedDict):
+    roundId: str
+    opponent: str
+    points: str
+    mp: int | float
+    gp: int | float
+
+
+class BroadcastTeamStandingsPlayer(TypedDict):
+    name: str
+    score: int | float
+    title: NotRequired[Title]
+    rating: NotRequired[int]
+    fideId: NotRequired[int]
+    team: NotRequired[str]
+    fed: NotRequired[str]
+    played: NotRequired[int]
+
+
+class BroadcastTeamStandingsItem(TypedDict):
+    name: str
+    mp: int | float
+    gp: int | float
+    matches: List[BroadcastTeamStandingsMatch]
+    players: List[BroadcastTeamStandingsPlayer]
+    averageRating: NotRequired[int]
