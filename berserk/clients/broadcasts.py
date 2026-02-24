@@ -8,6 +8,7 @@ from .base import BaseClient
 
 from ..types.broadcast import (
     BroadcastPlayer,
+    BroadcastTeamStandingsItem,
     BroadcastTop,
     PaginatedBroadcasts,
     BroadcastsByUser,
@@ -296,3 +297,14 @@ class Broadcasts(BaseClient):
         path = f"/api/broadcast/by/{username}"
         params = {"page": page, "html": html}
         return cast(BroadcastsByUser, self._r.get(path, params=params))
+
+    def get_team_standings(
+        self, broadcast_tournament_id: str
+    ) -> List[BroadcastTeamStandingsItem]:
+        """Get the team leaderboard of a broadcast.
+
+        :param broadcast_tournament_id: ID of the broadcast tournament
+        :return: list of teams with name, match/board points, matches, and players
+        """
+        path = f"/broadcast/{broadcast_tournament_id}/teams/standings"
+        return cast(List[BroadcastTeamStandingsItem], self._r.get(path))

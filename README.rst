@@ -119,6 +119,7 @@ Most of the API is available:
     client.broadcasts.get_top
     client.broadcasts.search
     client.broadcasts.get_by_user
+    client.broadcasts.get_team_standings
 
     client.bulk_pairings.get_upcoming
     client.bulk_pairings.create
