@@ -122,6 +122,7 @@ Most of the API is available:
 
     client.bulk_pairings.get_upcoming
     client.bulk_pairings.create
+    client.bulk_pairings.export_games
     client.bulk_pairings.start_clocks
     client.bulk_pairings.cancel
 

@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-from typing import cast
+from typing import Any, Dict, Iterator, cast
 
-from ..formats import JSON, JSON_LIST
+from .. import models
+from ..formats import JSON, JSON_LIST, NDJSON, PGN
 from ..types.bulk_pairings import BulkPairing
 from ..types.common import VariantKey
 from .base import BaseClient
@@ -99,3 +100,59 @@ class BulkPairings(BaseClient):
         """
         path = f"/api/bulk-pairing/{bulk_pairing_id}"
         self._r.request("DELETE", path)
+
+    def export_games(
+        self,
+        bulk_pairing_id: str,
+        *,
+        as_pgn: bool = True,
+        moves: bool = True,
+        pgn_in_json: bool = False,
+        tags: bool = True,
+        clocks: bool = False,
+        evals: bool = False,
+        accuracy: bool = False,
+        opening: bool = False,
+        division: bool = False,
+        literate: bool = False,
+    ) -> Iterator[str] | Iterator[Dict[str, Any]]:
+        """Export games of a bulk pairing in PGN or NDJSON format.
+
+        Response format is controlled by ``as_pgn``: PGN returns one game per
+        yielded string; NDJSON yields one JSON object per game.
+
+        :param bulk_pairing_id: id of the bulk pairing
+        :param as_pgn: whether to return PGN (default True) or NDJSON
+        :param moves: include the PGN moves
+        :param pgn_in_json: include the full PGN in a ``pgn`` field (NDJSON only)
+        :param tags: include the PGN tags
+        :param clocks: include clock comments in PGN or ``clocks`` JSON field
+        :param evals: include analysis evaluations in PGN or ``analysis`` JSON field
+        :param accuracy: include accuracy percent per player (NDJSON only)
+        :param opening: include the opening name
+        :param division: include plies for middlegame/endgame (NDJSON only)
+        :param literate: include textual annotations in PGN
+        :return: iterator over games as PGN strings or JSON dicts
+        """
+        path = f"/api/bulk-pairing/{bulk_pairing_id}/games"
+        params = {
+            "moves": moves,
+            "pgnInJson": pgn_in_json,
+            "tags": tags,
+            "clocks": clocks,
+            "evals": evals,
+            "accuracy": accuracy,
+            "opening": opening,
+            "division": division,
+            "literate": literate,
+        }
+        if as_pgn:
+            yield from self._r.get(path, params=params, fmt=PGN, stream=True)
+        else:
+            yield from self._r.get(
+                path,
+                params=params,
+                fmt=NDJSON,
+                stream=True,
+                converter=models.Game.convert,
+            )
