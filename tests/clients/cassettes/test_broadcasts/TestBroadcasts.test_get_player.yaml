@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://lichess.org/broadcast/8jXzp45R/players/13401319
+  response:
+    body:
+      string: '{"name":"Mamedyarov, Shakhriyar","title":"GM","rating":2742,"fideId":13401319,"team":"BayeganPendik
+        chess sports","fed":"AZE","played":7,"score":5.5,"ratingDiff":0,"ratingsMap":{"standard":2742},"ratingDiffs":{"standard":0},"performance":2720,"performances":{"standard":2720},"fide":{"year":1985,"ratings":{"standard":2727,"rapid":2712,"blitz":2632},"follow":false},"games":[{"round":"DuJvNdMY","id":"qsEiUcgK","opponent":{"name":"Gijswijt,
+        Bart","title":"FM","rating":2295,"fideId":1009435,"team":"HWP Haarlem","fed":"NED"},"color":"black","fideTC":"standard","points":"1","ratingDiff":1},{"round":"8FA2y61K","id":"qAUwVXO6","opponent":{"name":"Pasti,
+        Aron","title":"IM","rating":2366,"fideId":785857,"team":"SK Dunajska Streda","fed":"HUN"},"color":"white","fideTC":"standard","points":"1","ratingDiff":1},{"round":"00hRO87y","id":"3CspVFvm","opponent":{"name":"Wachinger,
+        Nikolas","title":"IM","rating":2456,"fideId":12962791,"team":"SV Werder Bremen","fed":"GER"},"color":"white","fideTC":"standard","points":"1","ratingDiff":2},{"round":"IBcpk6tK","id":"K0FWdrqT","opponent":{"name":"Eljanov,
+        Pavel","title":"GM","rating":2657,"fideId":14102951,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"UKR"},"color":"black","fideTC":"standard","points":"0","ratingDiff":-6},{"round":"f7DytHc1","id":"Im8CRTae","opponent":{"name":"Van
+        Foreest, Jorden","title":"GM","rating":2697,"fideId":1039784,"team":"SuperChess","fed":"NED"},"color":"white","fideTC":"standard","points":"1/2","ratingDiff":-1},{"round":"GLJOviZK","id":"ny3SqBVX","opponent":{"name":"Hracek,
+        Zbynek","title":"GM","rating":2539,"fideId":300071,"team":"Sigil Fund Pardubice","fed":"CZE"},"color":"white","fideTC":"standard","points":"1","ratingDiff":2},{"round":"4KlYyGdK","id":"3aRwR78o","opponent":{"name":"Galopoulos,
+        Nikolaos","rating":2425,"fideId":4208951,"team":"Kavala","fed":"GRE"},"color":"black","fideTC":"standard","points":"1","ratingDiff":1}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 24 Feb 2026 22:27:16 GMT
+      Permissions-Policy:
+      - screen-wake-lock=(self "https://lichess1.org"), microphone=(self), fullscreen=(self)
+      - interest-cohort=()
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Frame-Options:
+      - DENY
+      content-length:
+      - '1928'
+    status:
+      code: 200
+      message: OK
+version: 1

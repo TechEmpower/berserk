@@ -9,6 +9,7 @@ from .base import BaseClient
 from ..types.broadcast import (
     BroadcastPlayer,
     BroadcastTop,
+    BroadcastTournamentPlayer,
     PaginatedBroadcasts,
     BroadcastsByUser,
 )
@@ -296,3 +297,15 @@ class Broadcasts(BaseClient):
         path = f"/api/broadcast/by/{username}"
         params = {"page": page, "html": html}
         return cast(BroadcastsByUser, self._r.get(path, params=params))
+
+    def get_player(
+        self, broadcast_tournament_id: str, player_id: str
+    ) -> BroadcastTournamentPlayer:
+        """Get a single player of a broadcast tournament.
+
+        :param broadcast_tournament_id: ID of the broadcast tournament (8 characters)
+        :param player_id: ID of the player (e.g. FIDE ID)
+        :return: the broadcast tournament player
+        """
+        path = f"/broadcast/{broadcast_tournament_id}/players/{player_id}"
+        return cast(BroadcastTournamentPlayer, self._r.get(path))
