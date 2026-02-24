@@ -1,0 +1,570 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://lichess.org/broadcast/8jXzp45R/players
+  response:
+    body:
+      string: '[{"name":"Gijswijt, Bart","title":"FM","rating":2295,"fideId":1009435,"team":"HWP
+        Haarlem","fed":"NED","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2295},"ratingDiffs":{"standard":-2},"performance":1942,"performances":{"standard":1942}},{"name":"Mamedyarov,
+        Shakhriyar","title":"GM","rating":2742,"fideId":13401319,"team":"BayeganPendik
+        chess sports","fed":"AZE","played":7,"score":5.5,"ratingDiff":0,"ratingsMap":{"standard":2742},"ratingDiffs":{"standard":0},"performance":2720,"performances":{"standard":2720}},{"name":"Rapport,
+        Richard","title":"GM","rating":2724,"fideId":738590,"team":"BayeganPendik
+        chess sports","fed":"HUN","played":6,"score":5,"ratingDiff":4,"ratingsMap":{"standard":2724},"ratingDiffs":{"standard":4},"performance":2760,"performances":{"standard":2760}},{"name":"Tondivar,
+        Babak","title":"FM","rating":2321,"fideId":12501239,"team":"HWP Haarlem","fed":"NED","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2321},"ratingDiffs":{"standard":-2},"performance":1924,"performances":{"standard":1924}},{"name":"Duijn,
+        Richard","title":"FM","rating":2179,"fideId":1003771,"team":"HWP Haarlem","fed":"NED","played":1,"score":0.5,"ratingDiff":8,"ratingsMap":{"standard":2179},"ratingDiffs":{"standard":8},"performance":2679,"performances":{"standard":2679}},{"name":"Alekseenko,
+        Kirill","title":"GM","rating":2679,"fideId":4135539,"team":"BayeganPendik
+        chess sports","fed":"AUT","played":6,"score":4.5,"ratingDiff":-2,"ratingsMap":{"standard":2679},"ratingDiffs":{"standard":-2},"performance":2608,"performances":{"standard":2608}},{"name":"Murzin,
+        Volodar","title":"GM","rating":2664,"fideId":44155573,"team":"BayeganPendik
+        chess sports","fed":"FID","played":6,"score":4,"ratingDiff":-9,"ratingsMap":{"standard":2664},"ratingDiffs":{"standard":-9},"performance":2486,"performances":{"standard":2486}},{"name":"Brookes,
+        Christopher","title":"CM","rating":2202,"fideId":4669355,"team":"HWP Haarlem","fed":"NED","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2202},"ratingDiffs":{"standard":-2},"performance":1864,"performances":{"standard":1864}},{"name":"Boelhouwer,
+        Collin","rating":2167,"fideId":1013300,"team":"HWP Haarlem","fed":"NED","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2167},"ratingDiffs":{"standard":-2},"performance":1791,"performances":{"standard":1791}},{"name":"Yilmaz,
+        Mustafa","title":"GM","rating":2591,"fideId":6302718,"team":"BayeganPendik
+        chess sports","fed":"TUR","played":3,"score":3,"ratingDiff":5,"ratingsMap":{"standard":2591},"ratingDiffs":{"standard":5},"performance":3086,"performances":{"standard":3086}},{"name":"Can,
+        Emre","title":"GM","rating":2552,"fideId":6302181,"team":"BayeganPendik chess
+        sports","fed":"TUR","played":3,"score":2,"ratingDiff":-5,"ratingsMap":{"standard":2552},"ratingDiffs":{"standard":-5},"performance":2366,"performances":{"standard":2366}},{"name":"Mazajchik,
+        Tim","rating":2139,"fideId":1011901,"team":"HWP Haarlem","fed":"NED","played":1,"score":0.5,"ratingDiff":8,"ratingsMap":{"standard":2139},"ratingDiffs":{"standard":8},"performance":2552,"performances":{"standard":2552}},{"name":"Erigaisi
+        Arjun","title":"GM","rating":2773,"fideId":35009192,"team":"Alkaloid","fed":"IND","played":7,"score":4.5,"ratingDiff":-4,"ratingsMap":{"standard":2773},"ratingDiffs":{"standard":-4},"performance":2709,"performances":{"standard":2709}},{"name":"Saraci,
+        Nderim","title":"IM","rating":2445,"fideId":6351921,"team":"Dardania","fed":"KOS","played":2,"score":1.5,"ratingDiff":8,"ratingsMap":{"standard":2445},"ratingDiffs":{"standard":8},"performance":2762,"performances":{"standard":2762}},{"name":"Boci,
+        Mateu","title":"FM","rating":2186,"fideId":4704665,"team":"Dardania","fed":"ALB","played":2,"score":0,"ratingDiff":-6,"ratingsMap":{"standard":2186},"ratingDiffs":{"standard":-6},"performance":1778,"performances":{"standard":1778}},{"name":"Wei,
+        Yi","title":"GM","rating":2754,"fideId":8603405,"team":"Alkaloid","fed":"CHN","played":7,"score":5.5,"ratingDiff":3,"ratingsMap":{"standard":2754},"ratingDiffs":{"standard":3},"performance":2764,"performances":{"standard":2764}},{"name":"Yu,
+        Yangyi","title":"GM","rating":2720,"fideId":8603820,"team":"Alkaloid","fed":"CHN","played":7,"score":5,"ratingDiff":-2,"ratingsMap":{"standard":2720},"ratingDiffs":{"standard":-2},"performance":2660,"performances":{"standard":2660}},{"name":"Saraci,
+        Korab","title":"CM","rating":2197,"fideId":4701968,"team":"Dardania","fed":"KOS","played":2,"score":0,"ratingDiff":-6,"ratingsMap":{"standard":2197},"ratingDiffs":{"standard":-6},"performance":1775,"performances":{"standard":1775}},{"name":"Jashari,
+        Ardian","title":"FM","rating":2166,"fideId":955388,"team":"Dardania","fed":"KOS","played":2,"score":0.5,"ratingDiff":2,"ratingsMap":{"standard":2166},"ratingDiffs":{"standard":2},"performance":2305,"performances":{"standard":2305}},{"name":"Aravindh,
+        Chithambaram VR.","title":"GM","rating":2711,"fideId":5072786,"team":"Alkaloid","fed":"IND","played":7,"score":5.5,"ratingDiff":1,"ratingsMap":{"standard":2711},"ratingDiffs":{"standard":1},"performance":2691,"performances":{"standard":2691}},{"name":"Puranik,
+        Abhimanyu","title":"GM","rating":2615,"fideId":5061245,"team":"Alkaloid","fed":"IND","played":6,"score":5,"ratingDiff":7,"ratingsMap":{"standard":2615},"ratingDiffs":{"standard":7},"performance":2683,"performances":{"standard":2683}},{"name":"Budima,
+        Armend","title":"CM","rating":2169,"fideId":3612236,"team":"Dardania","fed":"KOS","played":2,"score":0,"ratingDiff":-8,"ratingsMap":{"standard":2169},"ratingDiffs":{"standard":-8},"performance":1658,"performances":{"standard":1658}},{"name":"Krasniqi,
+        Alban","rating":2131,"fideId":22101381,"team":"Dardania","fed":"KOS","played":2,"score":1,"ratingDiff":10,"ratingsMap":{"standard":2131},"ratingDiffs":{"standard":10},"performance":2324,"performances":{"standard":2324}},{"name":"Lazov,
+        Toni","title":"IM","rating":2382,"fideId":15000770,"team":"Alkaloid","fed":"MKD","played":1,"score":1,"ratingDiff":2,"ratingsMap":{"standard":2382},"ratingDiffs":{"standard":2},"performance":2931,"performances":{"standard":2931}},{"name":"Ghazarian,
+        Kirk","title":"GM","rating":2513,"fideId":30908604,"team":"Baerum Schakselskap","fed":"USA","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2513},"ratingDiffs":{"standard":-2},"performance":1916,"performances":{"standard":1916}},{"name":"Vidit,
+        Santosh Gujrathi","title":"GM","rating":2716,"fideId":5029465,"team":"Novy
+        Bor","fed":"IND","played":6,"score":4,"ratingDiff":-1,"ratingsMap":{"standard":2716},"ratingDiffs":{"standard":-1},"performance":2694,"performances":{"standard":2694}},{"name":"Harikrishna,
+        Pentala","title":"GM","rating":2697,"fideId":5007003,"team":"Novy Bor","fed":"IND","played":6,"score":3.5,"ratingDiff":-7,"ratingsMap":{"standard":2697},"ratingDiffs":{"standard":-7},"performance":2595,"performances":{"standard":2595}},{"name":"Elmi,
+        Saad Abobaker","title":"IM","rating":2415,"fideId":1553259,"team":"Baerum
+        Schakselskap","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2415},"ratingDiffs":{"standard":-2},"performance":1897,"performances":{"standard":1897}},{"name":"Evenshaug,
+        Amadeus Hestvik","title":"CM","rating":2244,"fideId":1534874,"team":"Baerum
+        Schakselskap","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2244},"ratingDiffs":{"standard":-2},"performance":1856,"performances":{"standard":1856}},{"name":"Navara,
+        David","title":"GM","rating":2656,"fideId":309095,"team":"Novy Bor","fed":"CZE","played":6,"score":4,"ratingDiff":-4,"ratingsMap":{"standard":2656},"ratingDiffs":{"standard":-4},"performance":2587,"performances":{"standard":2587}},{"name":"Grandelius,
+        Nils","title":"GM","rating":2645,"fideId":1710400,"team":"Novy Bor","fed":"SWE","played":6,"score":5,"ratingDiff":5,"ratingsMap":{"standard":2645},"ratingDiffs":{"standard":5},"performance":2661,"performances":{"standard":2661}},{"name":"Mihajlov,
+        Svetoslav","title":"CM","rating":2119,"fideId":1507168,"team":"Baerum Schakselskap","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2119},"ratingDiffs":{"standard":-2},"performance":1845,"performances":{"standard":1845}},{"name":"Skagseth,
+        Havard M","rating":2029,"fideId":1511572,"team":"Baerum Schakselskap","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2029},"ratingDiffs":{"standard":-2},"performance":1831,"performances":{"standard":1831}},{"name":"Anton
+        Guijarro, David","title":"GM","rating":2631,"fideId":2285525,"team":"Novy
+        Bor","fed":"ESP","played":7,"score":6,"ratingDiff":8,"ratingsMap":{"standard":2631},"ratingDiffs":{"standard":8},"performance":2684,"performances":{"standard":2684}},{"name":"Bjerre,
+        Jonas Buhl","title":"GM","rating":2629,"fideId":1444948,"team":"Novy Bor","fed":"DEN","played":5,"score":4,"ratingDiff":-3,"ratingsMap":{"standard":2629},"ratingDiffs":{"standard":-3},"performance":2417,"performances":{"standard":2417}},{"name":"Hestvik,
+        Elias","rating":1957,"fideId":1534904,"team":"Baerum Schakselskap","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":1957},"ratingDiffs":{"standard":-2},"performance":1829,"performances":{"standard":1829}},{"name":"Van
+        Foreest, Jorden","title":"GM","rating":2697,"fideId":1039784,"team":"SuperChess","fed":"NED","played":7,"score":4,"ratingDiff":-3,"ratingsMap":{"standard":2697},"ratingDiffs":{"standard":-3},"performance":2656,"performances":{"standard":2656}},{"name":"Urkedal,
+        Frode Olav Olsen","title":"GM","rating":2561,"fideId":1506102,"team":"SK 1911","fed":"NOR","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2561},"ratingDiffs":{"standard":-3},"performance":1897,"performances":{"standard":1897}},{"name":"Risting,
+        Eivind Olav","title":"FM","rating":2265,"fideId":1517333,"team":"SK 1911","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2265},"ratingDiffs":{"standard":-2},"performance":1897,"performances":{"standard":1897}},{"name":"Maghsoodloo,
+        Parham","title":"GM","rating":2697,"fideId":12539929,"team":"SuperChess","fed":"IRI","played":6,"score":4.5,"ratingDiff":4,"ratingsMap":{"standard":2697},"ratingDiffs":{"standard":4},"performance":2729,"performances":{"standard":2729}},{"name":"Sarana,
+        Alexey","title":"GM","rating":2661,"fideId":24133795,"team":"SuperChess","fed":"SRB","played":7,"score":5.5,"ratingDiff":7,"ratingsMap":{"standard":2661},"ratingDiffs":{"standard":7},"performance":2724,"performances":{"standard":2724}},{"name":"Kjolberg,
+        Jens Hjorth","title":"CM","rating":2198,"fideId":1508172,"team":"SK 1911","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2198},"ratingDiffs":{"standard":-2},"performance":1861,"performances":{"standard":1861}},{"name":"Dahl,
+        Max","rating":2159,"fideId":1526626,"team":"SK 1911","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2159},"ratingDiffs":{"standard":-2},"performance":1855,"performances":{"standard":1855}},{"name":"Deac,
+        Bogdan-Daniel","title":"GM","rating":2655,"fideId":1226380,"team":"SuperChess","fed":"ROU","played":6,"score":4.5,"ratingDiff":4,"ratingsMap":{"standard":2655},"ratingDiffs":{"standard":4},"performance":2675,"performances":{"standard":2675}},{"name":"Dardha,
+        Daniel","title":"GM","rating":2605,"fideId":240990,"team":"SuperChess","fed":"BEL","played":7,"score":5.5,"ratingDiff":8,"ratingsMap":{"standard":2605},"ratingDiffs":{"standard":8},"performance":2667,"performances":{"standard":2667}},{"name":"Bergan,
+        Gaute","title":"CM","rating":2061,"fideId":1526014,"team":"SK 1911","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2061},"ratingDiffs":{"standard":-2},"performance":1805,"performances":{"standard":1805}},{"name":"Hellerud,
+        Lauritz Nissen","rating":1993,"fideId":1570528,"team":"SK 1911","fed":"NOR","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":1993},"ratingDiffs":{"standard":-3},"performance":1781,"performances":{"standard":1781}},{"name":"Sokolov,
+        Ivan","title":"GM","rating":2581,"fideId":14400030,"team":"SuperChess","fed":"NED","played":1,"score":1,"ratingDiff":1,"ratingsMap":{"standard":2581},"ratingDiffs":{"standard":1},"performance":2793,"performances":{"standard":2793}},{"name":"Koykka,
+        Pekka","title":"IM","rating":2343,"fideId":504319,"team":"Tammer-Shakki","fed":"FIN","played":1,"score":0,"ratingDiff":-1,"ratingsMap":{"standard":2343},"ratingDiffs":{"standard":-1},"performance":1843,"performances":{"standard":1843}},{"name":"Gledura,
+        Benjamin","title":"GM","rating":2643,"fideId":712779,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"HUN","played":6,"score":5,"ratingDiff":10,"ratingsMap":{"standard":2643},"ratingDiffs":{"standard":10},"performance":2772,"performances":{"standard":2772}},{"name":"Volokitin,
+        Andrei","title":"GM","rating":2617,"fideId":14107090,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"UKR","played":6,"score":4,"ratingDiff":1,"ratingsMap":{"standard":2617},"ratingDiffs":{"standard":1},"performance":2624,"performances":{"standard":2624}},{"name":"Ahvenjarvi,
+        Jani","title":"FM","rating":2330,"fideId":507571,"team":"Tammer-Shakki","fed":"FIN","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2330},"ratingDiffs":{"standard":-3},"performance":1817,"performances":{"standard":1817}},{"name":"Penttinen,
+        Jarkko","title":"FM","rating":2226,"fideId":501743,"team":"Tammer-Shakki","fed":"FIN","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2226},"ratingDiffs":{"standard":-2},"performance":1821,"performances":{"standard":1821}},{"name":"Yuffa,
+        Daniil","title":"GM","rating":2621,"fideId":24131423,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"ESP","played":6,"score":4.5,"ratingDiff":3,"ratingsMap":{"standard":2621},"ratingDiffs":{"standard":3},"performance":2637,"performances":{"standard":2637}},{"name":"Samunenkov,
+        Ihor","title":"GM","rating":2568,"fideId":14187086,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"UKR","played":6,"score":4,"ratingDiff":1,"ratingsMap":{"standard":2568},"ratingDiffs":{"standard":1},"performance":2543,"performances":{"standard":2543}},{"name":"Ponnio,
+        Toni","rating":2101,"fideId":509604,"team":"Tammer-Shakki","fed":"FIN","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2101},"ratingDiffs":{"standard":-2},"performance":1768,"performances":{"standard":1768}},{"name":"Iivonen,
+        Markku","rating":2065,"fideId":506940,"team":"Tammer-Shakki","fed":"FIN","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2065},"ratingDiffs":{"standard":-2},"performance":1735,"performances":{"standard":1735}},{"name":"Markus,
+        Robert","title":"GM","rating":2535,"fideId":921637,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"SRB","played":5,"score":3,"ratingDiff":-11,"ratingsMap":{"standard":2535},"ratingDiffs":{"standard":-11},"performance":2325,"performances":{"standard":2325}},{"name":"Medvegy,
+        Zoltan Dr.","title":"GM","rating":2518,"fideId":708402,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"HUN","played":3,"score":3,"ratingDiff":4,"ratingsMap":{"standard":2518},"ratingDiffs":{"standard":4},"performance":2961,"performances":{"standard":2961}},{"name":"Sorvari,
+        Jarmo","rating":2055,"fideId":509671,"team":"Tammer-Shakki","fed":"FIN","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2055},"ratingDiffs":{"standard":-2},"performance":1718,"performances":{"standard":1718}},{"name":"Mamedov,
+        Rauf","title":"GM","rating":2655,"fideId":13401653,"team":"Vugar Gashimov","fed":"AZE","played":5,"score":3,"ratingDiff":0,"ratingsMap":{"standard":2655},"ratingDiffs":{"standard":0},"performance":2633,"performances":{"standard":2633}},{"name":"Ledger,
+        Andrew J","title":"IM","rating":2308,"fideId":400610,"team":"Blackthorne","fed":"ENG","played":1,"score":0,"ratingDiff":-1,"ratingsMap":{"standard":2308},"ratingDiffs":{"standard":-1},"performance":1855,"performances":{"standard":1855}},{"name":"Bates,
+        Richard A","title":"IM","rating":2282,"fideId":403555,"team":"Blackthorne","fed":"ENG","played":1,"score":0.5,"ratingDiff":3,"ratingsMap":{"standard":2282},"ratingDiffs":{"standard":3},"performance":2543,"performances":{"standard":2543}},{"name":"Nogerbek,
+        Kazybek","title":"GM","rating":2543,"fideId":13710427,"team":"Vugar Gashimov","fed":"KAZ","played":7,"score":3.5,"ratingDiff":-5,"ratingsMap":{"standard":2543},"ratingDiffs":{"standard":-5},"performance":2487,"performances":{"standard":2487}},{"name":"Ahmadzada,
+        Ahmad","title":"GM","rating":2523,"fideId":13413007,"team":"Vugar Gashimov","fed":"AZE","played":7,"score":5,"ratingDiff":7,"ratingsMap":{"standard":2523},"ratingDiffs":{"standard":7},"performance":2589,"performances":{"standard":2589}},{"name":"Webb,
+        Laurence E","title":"FM","rating":2170,"fideId":402389,"team":"Blackthorne","fed":"ENG","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2170},"ratingDiffs":{"standard":-2},"performance":1723,"performances":{"standard":1723}},{"name":"Ledger,
+        Dave J","title":"FM","rating":2138,"fideId":401986,"team":"Blackthorne","fed":"ENG","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2138},"ratingDiffs":{"standard":-2},"performance":1723,"performances":{"standard":1723}},{"name":"Samadov,
+        Read","title":"IM","rating":2523,"fideId":13417444,"team":"Vugar Gashimov","fed":"AZE","played":7,"score":5,"ratingDiff":6,"ratingsMap":{"standard":2523},"ratingDiffs":{"standard":6},"performance":2570,"performances":{"standard":2570}},{"name":"Babazada,
+        Khazar","title":"IM","rating":2502,"fideId":13413554,"team":"Vugar Gashimov","fed":"AZE","played":6,"score":5,"ratingDiff":7,"ratingsMap":{"standard":2502},"ratingDiffs":{"standard":7},"performance":2597,"performances":{"standard":2597}},{"name":"Duncan,
+        Chris R","title":"FM","rating":2183,"fideId":403091,"team":"Blackthorne","fed":"ENG","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2183},"ratingDiffs":{"standard":-3},"performance":1702,"performances":{"standard":1702}},{"name":"Ledger,
+        Stephen C","title":"CM","rating":2030,"fideId":404470,"team":"Blackthorne","fed":"ENG","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2030},"ratingDiffs":{"standard":-2},"performance":1620,"performances":{"standard":1620}},{"name":"Manafov,
+        Vugar","title":"IM","rating":2420,"fideId":13410814,"team":"Vugar Gashimov","fed":"AZE","played":5,"score":3.5,"ratingDiff":1,"ratingsMap":{"standard":2420},"ratingDiffs":{"standard":1},"performance":2398,"performances":{"standard":2398}},{"name":"Hjartarson,
+        Johann","title":"GM","rating":2466,"fideId":2300044,"team":"Akureyri","fed":"ISL","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2466},"ratingDiffs":{"standard":-3},"performance":1836,"performances":{"standard":1836}},{"name":"Gelfand,
+        Boris","title":"GM","rating":2636,"fideId":2805677,"team":"Rishon Le Zion
+        #1","fed":"ISR","played":7,"score":4,"ratingDiff":-3,"ratingsMap":{"standard":2636},"ratingDiffs":{"standard":-3},"performance":2600,"performances":{"standard":2600}},{"name":"Rodshtein,
+        Maxim","title":"GM","rating":2647,"fideId":2806851,"team":"Rishon Le Zion
+        #1","fed":"ISR","played":7,"score":4,"ratingDiff":-7,"ratingsMap":{"standard":2647},"ratingDiffs":{"standard":-7},"performance":2541,"performances":{"standard":2541}},{"name":"Thorarinsson,
+        Pall A.","title":"FM","rating":2187,"fideId":2300923,"team":"Akureyri","fed":"ISL","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2187},"ratingDiffs":{"standard":-2},"performance":1847,"performances":{"standard":1847}},{"name":"Halldorsson,
+        Halldor","title":"CM","rating":2099,"fideId":2301369,"team":"Akureyri","fed":"ISL","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2099},"ratingDiffs":{"standard":-2},"performance":1754,"performances":{"standard":1754}},{"name":"Steinberg,
+        Nitzan","title":"GM","rating":2554,"fideId":2801795,"team":"Rishon Le Zion
+        #1","fed":"ISR","played":7,"score":4.5,"ratingDiff":2,"ratingsMap":{"standard":2554},"ratingDiffs":{"standard":2},"performance":2548,"performances":{"standard":2548}},{"name":"Sokolovsky,
+        Yahli","title":"GM","rating":2539,"fideId":2820242,"team":"Rishon Le Zion
+        #1","fed":"ISR","played":6,"score":3.5,"ratingDiff":-1,"ratingsMap":{"standard":2539},"ratingDiffs":{"standard":-1},"performance":2516,"performances":{"standard":2516}},{"name":"Bergsson,
+        Stefan","rating":2163,"fideId":2301393,"team":"Akureyri","fed":"ISL","played":0,"ratingsMap":{"standard":2163}},{"name":"Karason,
+        Askell O","title":"IM","rating":2108,"fideId":2300567,"team":"Akureyri","fed":"ISL","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2108},"ratingDiffs":{"standard":-2},"performance":1704,"performances":{"standard":1704}},{"name":"Zanan,
+        Evgeny","title":"GM","rating":2504,"fideId":24101940,"team":"Rishon Le Zion
+        #1","fed":"ISR","played":7,"score":4.5,"ratingDiff":1,"ratingsMap":{"standard":2504},"ratingDiffs":{"standard":1},"performance":2497,"performances":{"standard":2497}},{"name":"Bronstein,
+        Or","title":"IM","rating":2460,"fideId":2815770,"team":"Rishon Le Zion #1","fed":"ISR","played":7,"score":5.5,"ratingDiff":10,"ratingsMap":{"standard":2460},"ratingDiffs":{"standard":10},"performance":2562,"performances":{"standard":2562}},{"name":"Palsson,
+        Bogi","rating":2157,"fideId":1502379,"team":"Akureyri","fed":"NOR","played":1,"score":0,"ratingDiff":-6,"ratingsMap":{"standard":2157},"ratingDiffs":{"standard":-6},"performance":1660,"performances":{"standard":1660}},{"name":"Warmerdam,
+        Max","title":"GM","rating":2582,"fideId":1048104,"team":"Kfar Saba","fed":"NED","played":7,"score":3.5,"ratingDiff":-4,"ratingsMap":{"standard":2582},"ratingDiffs":{"standard":-4},"performance":2536,"performances":{"standard":2536}},{"name":"Ermitsch,
+        Magnus","title":"IM","rating":2425,"fideId":16234464,"team":"SK Doppelbauer
+        Kiel","fed":"GER","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2425},"ratingDiffs":{"standard":-3},"performance":1782,"performances":{"standard":1782}},{"name":"Medhus,
+        Vitus Bondo","title":"FM","rating":2304,"fideId":1462547,"team":"SK Doppelbauer
+        Kiel","fed":"DEN","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2304},"ratingDiffs":{"standard":-2},"performance":1737,"performances":{"standard":1737}},{"name":"Gorshtein,
+        Ido","title":"GM","rating":2537,"fideId":2815532,"team":"Kfar Saba","fed":"ISR","played":7,"score":6,"ratingDiff":19,"ratingsMap":{"standard":2537},"ratingDiffs":{"standard":19},"performance":2778,"performances":{"standard":2778}},{"name":"Boruchovsky,
+        Avital","title":"GM","rating":2509,"fideId":2800055,"team":"Kfar Saba","fed":"ISR","played":7,"score":6,"ratingDiff":16,"ratingsMap":{"standard":2509},"ratingDiffs":{"standard":16},"performance":2711,"performances":{"standard":2711}},{"name":"Vollbehr,
+        Bjarne","title":"CM","rating":2192,"fideId":34606025,"team":"SK Doppelbauer
+        Kiel","fed":"GER","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2192},"ratingDiffs":{"standard":-5},"performance":1709,"performances":{"standard":1709}},{"name":"Braeutigam,
+        Alexander","rating":2115,"fideId":16245210,"team":"SK Doppelbauer Kiel","fed":"GER","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2115},"ratingDiffs":{"standard":-4},"performance":1666,"performances":{"standard":1666}},{"name":"Levin,
+        Guy","title":"IM","rating":2466,"fideId":2824213,"team":"Kfar Saba","fed":"ISR","played":7,"score":5,"ratingDiff":7,"ratingsMap":{"standard":2466},"ratingDiffs":{"standard":7},"performance":2531,"performances":{"standard":2531}},{"name":"Erenberg,
+        Ariel","title":"IM","rating":2510,"fideId":2811634,"team":"Kfar Saba","fed":"ISR","played":7,"score":3,"ratingDiff":-21,"ratingsMap":{"standard":2510},"ratingDiffs":{"standard":-21},"performance":2271,"performances":{"standard":2271}},{"name":"Stegert,
+        Jonas","rating":2083,"fideId":16247965,"team":"SK Doppelbauer Kiel","fed":"GER","played":1,"score":0.5,"ratingDiff":8,"ratingsMap":{"standard":2083},"ratingDiffs":{"standard":8},"performance":2510,"performances":{"standard":2510}},{"name":"Petersen,
+        Finn Christopher","rating":1880,"fideId":12964840,"team":"SK Doppelbauer Kiel","fed":"GER","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":1880},"ratingDiffs":{"standard":-2},"performance":1651,"performances":{"standard":1651}},{"name":"Mindlin,
+        Alon","title":"IM","rating":2451,"fideId":2800071,"team":"Kfar Saba","fed":"ISR","played":7,"score":6,"ratingDiff":7,"ratingsMap":{"standard":2451},"ratingDiffs":{"standard":7},"performance":2489,"performances":{"standard":2489}},{"name":"Fernandez,
+        Daniel Howard","title":"GM","rating":2496,"fideId":5801605,"team":"Kingston
+        Kings","fed":"ENG","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2496},"ratingDiffs":{"standard":-4},"performance":1786,"performances":{"standard":1786}},{"name":"Movahed,
+        Sina","title":"GM","rating":2586,"fideId":42520835,"team":"Turkish Airlines
+        sports club","fed":"IRI","played":5,"score":4,"ratingDiff":10,"ratingsMap":{"standard":2586},"ratingDiffs":{"standard":10},"performance":2748,"performances":{"standard":2748}},{"name":"Xiao,
+        Tong(QD)","title":"GM","rating":2537,"fideId":8622388,"team":"Turkish Airlines
+        sports club","fed":"CHN","played":7,"score":6.5,"ratingDiff":21,"ratingsMap":{"standard":2537},"ratingDiffs":{"standard":21},"performance":2858,"performances":{"standard":2858}},{"name":"Southcott-Moyers,
+        Indy","title":"FM","rating":2257,"fideId":488542,"team":"Kingston Kings","fed":"ENG","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2257},"ratingDiffs":{"standard":-3},"performance":1737,"performances":{"standard":1737}},{"name":"Manmay
+        Chopra","title":"CM","rating":2185,"fideId":25649191,"team":"Kingston Kings","fed":"IND","played":1,"score":0.5,"ratingDiff":7,"ratingsMap":{"standard":2185},"ratingDiffs":{"standard":7},"performance":2509,"performances":{"standard":2509}},{"name":"Oro,
+        Faustino","title":"IM","rating":2509,"fideId":20000197,"team":"Turkish Airlines
+        sports club","fed":"ARG","played":7,"score":3,"ratingDiff":-14,"ratingsMap":{"standard":2509},"ratingDiffs":{"standard":-14},"performance":2353,"performances":{"standard":2353}},{"name":"Ahmad,
+        Khagan","title":"IM","rating":2455,"fideId":13431552,"team":"Turkish Airlines
+        sports club","fed":"AZE","played":7,"score":4.5,"ratingDiff":5,"ratingsMap":{"standard":2455},"ratingDiffs":{"standard":5},"performance":2500,"performances":{"standard":2500}},{"name":"Murawski,
+        Jan","title":"CM","rating":2165,"fideId":21009287,"team":"Kingston Kings","fed":"ENG","played":1,"score":0,"ratingDiff":-6,"ratingsMap":{"standard":2165},"ratingDiffs":{"standard":-6},"performance":1655,"performances":{"standard":1655}},{"name":"Patel,
+        Zain","rating":2063,"fideId":469246,"team":"Kingston Kings","fed":"ENG","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2063},"ratingDiffs":{"standard":-3},"performance":1674,"performances":{"standard":1674}},{"name":"Cieslak,
+        Patryk","title":"IM","rating":2474,"fideId":21078882,"team":"Turkish Airlines
+        sports club","fed":"POL","played":7,"score":5,"ratingDiff":5,"ratingsMap":{"standard":2474},"ratingDiffs":{"standard":5},"performance":2512,"performances":{"standard":2512}},{"name":"Erten,
+        Kerem","title":"FM","rating":2372,"fideId":34588221,"team":"Turkish Airlines
+        sports club","fed":"TUR","played":7,"score":6,"ratingDiff":23,"ratingsMap":{"standard":2372},"ratingDiffs":{"standard":23},"performance":2650,"performances":{"standard":2650}},{"name":"Vashisht-Pigem,
+        Raman","rating":1984,"fideId":469734,"team":"Kingston Kings","fed":"ENG","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":1984},"ratingDiffs":{"standard":-4},"performance":1572,"performances":{"standard":1572}},{"name":"Rozen,
+        Eytan","title":"IM","rating":2510,"fideId":2816750,"team":"Beer Sheva","fed":"ISR","played":7,"score":4,"ratingDiff":5,"ratingsMap":{"standard":2510},"ratingDiffs":{"standard":5},"performance":2556,"performances":{"standard":2556}},{"name":"Sevgi,
+        Volkan","title":"FM","rating":2314,"fideId":6325335,"team":"Goztepe Spor Kulubu","fed":"TUR","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2314},"ratingDiffs":{"standard":-5},"performance":1710,"performances":{"standard":1710}},{"name":"Dedebas,
+        Emre Emin","title":"FM","rating":2299,"fideId":6349005,"team":"Goztepe Spor
+        Kulubu","fed":"TUR","played":1,"score":0.5,"ratingDiff":4,"ratingsMap":{"standard":2299},"ratingDiffs":{"standard":4},"performance":2459,"performances":{"standard":2459}},{"name":"Ben
+        Ari, Yannay","title":"IM","rating":2459,"fideId":2815222,"team":"Beer Sheva","fed":"ISR","played":7,"score":3.5,"ratingDiff":-2,"ratingsMap":{"standard":2459},"ratingDiffs":{"standard":-2},"performance":2436,"performances":{"standard":2436}},{"name":"Kobo,
+        Ori","title":"GM","rating":2480,"fideId":2812320,"team":"Beer Sheva","fed":"ISR","played":7,"score":4.5,"ratingDiff":2,"ratingsMap":{"standard":2480},"ratingDiffs":{"standard":2},"performance":2484,"performances":{"standard":2484}},{"name":"Gulbeyaz,
+        Emir","title":"FM","rating":2213,"fideId":6377076,"team":"Goztepe Spor Kulubu","fed":"TUR","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2213},"ratingDiffs":{"standard":-4},"performance":1680,"performances":{"standard":1680}},{"name":"Buyuk,
+        Eymen Eren","title":"CM","rating":2163,"fideId":26310872,"team":"Goztepe Spor
+        Kulubu","fed":"TUR","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2163},"ratingDiffs":{"standard":-4},"performance":1729,"performances":{"standard":1729}},{"name":"Postny,
+        Evgeny","title":"GM","rating":2529,"fideId":2804344,"team":"Beer Sheva","fed":"ISR","played":7,"score":5.5,"ratingDiff":4,"ratingsMap":{"standard":2529},"ratingDiffs":{"standard":4},"performance":2562,"performances":{"standard":2562}},{"name":"Huzman,
+        Alexander","title":"GM","rating":2521,"fideId":2803828,"team":"Beer Sheva","fed":"ISR","played":7,"score":1.5,"ratingDiff":-36,"ratingsMap":{"standard":2521},"ratingDiffs":{"standard":-36},"performance":2087,"performances":{"standard":2087}},{"name":"Gulsoy,
+        Mustafa Alpago","rating":2065,"fideId":6337074,"team":"Goztepe Spor Kulubu","fed":"TUR","played":1,"score":0.5,"ratingDiff":8,"ratingsMap":{"standard":2065},"ratingDiffs":{"standard":8},"performance":2521,"performances":{"standard":2521}},{"name":"Comez,
+        Kemalcan","title":"FM","rating":2059,"fideId":6301622,"team":"Goztepe Spor
+        Kulubu","fed":"TUR","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2059},"ratingDiffs":{"standard":-3},"performance":1573,"performances":{"standard":1573}},{"name":"Vydeslaver,
+        Alik","title":"IM","rating":2373,"fideId":2801876,"team":"Beer Sheva","fed":"ISR","played":7,"score":4,"ratingDiff":-6,"ratingsMap":{"standard":2373},"ratingDiffs":{"standard":-6},"performance":2284,"performances":{"standard":2284}},{"name":"Lund,
+        Gunnar","title":"FM","rating":2333,"fideId":1520814,"team":"Alta Sjakklubb","fed":"NOR","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2333},"ratingDiffs":{"standard":-4},"performance":1796,"performances":{"standard":1796}},{"name":"Cheng,
+        Bobby","title":"GM","rating":2596,"fideId":4300033,"team":"SV Werder Bremen","fed":"AUS","played":7,"score":3,"ratingDiff":-13,"ratingsMap":{"standard":2596},"ratingDiffs":{"standard":-13},"performance":2449,"performances":{"standard":2449}},{"name":"Wachinger,
+        Nikolas","title":"IM","rating":2456,"fideId":12962791,"team":"SV Werder Bremen","fed":"GER","played":7,"score":3.5,"ratingDiff":2,"ratingsMap":{"standard":2456},"ratingDiffs":{"standard":2},"performance":2480,"performances":{"standard":2480}},{"name":"Nielsen,
+        Andre","title":"FM","rating":2304,"fideId":1518240,"team":"Alta Sjakklubb","fed":"NOR","played":1,"score":0,"ratingDiff":-6,"ratingsMap":{"standard":2304},"ratingDiffs":{"standard":-6},"performance":1656,"performances":{"standard":1656}},{"name":"Bruaset,
+        Eivind","rating":2200,"fideId":1515276,"team":"Alta Sjakklubb","fed":"NOR","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2200},"ratingDiffs":{"standard":-4},"performance":1635,"performances":{"standard":1635}},{"name":"Colbow,
+        Collin","title":"IM","rating":2435,"fideId":16201132,"team":"SV Werder Bremen","fed":"GER","played":7,"score":3.5,"ratingDiff":-1,"ratingsMap":{"standard":2435},"ratingDiffs":{"standard":-1},"performance":2432,"performances":{"standard":2432}},{"name":"Grigorian,
+        Spartak","title":"IM","rating":2424,"fideId":24661490,"team":"SV Werder Bremen","fed":"GER","played":7,"score":3.5,"ratingDiff":-7,"ratingsMap":{"standard":2424},"ratingDiffs":{"standard":-7},"performance":2344,"performances":{"standard":2344}},{"name":"Skaar,
+        Ben Samuel Groth","rating":2167,"fideId":1552660,"team":"Alta Sjakklubb","fed":"NOR","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2167},"ratingDiffs":{"standard":-4},"performance":1624,"performances":{"standard":1624}},{"name":"Hammari,
+        Vinjar","rating":2119,"fideId":1552007,"team":"Alta Sjakklubb","fed":"NOR","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2119},"ratingDiffs":{"standard":-3},"performance":1590,"performances":{"standard":1590}},{"name":"Reuker,
+        Jari","title":"IM","rating":2390,"fideId":12909300,"team":"SV Werder Bremen","fed":"GER","played":7,"score":3.5,"ratingDiff":-9,"ratingsMap":{"standard":2390},"ratingDiffs":{"standard":-9},"performance":2276,"performances":{"standard":2276}},{"name":"Schulze,
+        Lara","title":"FM","rating":2319,"fideId":12956830,"team":"SV Werder Bremen","fed":"GER","played":7,"score":4.5,"ratingDiff":6,"ratingsMap":{"standard":2319},"ratingDiffs":{"standard":6},"performance":2307,"performances":{"standard":2307}},{"name":"Brasoy,
+        Aksel","rating":1946,"fideId":1503553,"team":"Alta Sjakklubb","fed":"NOR","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":1946},"ratingDiffs":{"standard":-2},"performance":1519,"performances":{"standard":1519}},{"name":"Dotzer,
+        Lukas","title":"IM","rating":2463,"fideId":1666975,"team":"Schachfreunde Berlin
+        1903","fed":"AUT","played":7,"score":3.5,"ratingDiff":4,"ratingsMap":{"standard":2463},"ratingDiffs":{"standard":4},"performance":2509,"performances":{"standard":2509}},{"name":"Zeneli,
+        Klendi","title":"CM","rating":2265,"fideId":4706609,"team":"Drejtesia Trokadero","fed":"ALB","played":1,"score":1,"ratingDiff":15,"ratingsMap":{"standard":2265},"ratingDiffs":{"standard":15},"performance":3263,"performances":{"standard":3263}},{"name":"Zymberi,
+        Astrit","title":"FM","rating":2068,"fideId":4700295,"team":"Drejtesia Trokadero","fed":"KOS","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2068},"ratingDiffs":{"standard":-2},"performance":1646,"performances":{"standard":1646}},{"name":"Baum,
+        Jonasz","title":"IM","rating":2446,"fideId":1195360,"team":"Schachfreunde
+        Berlin 1903","fed":"POL","played":7,"score":3.5,"ratingDiff":0,"ratingsMap":{"standard":2446},"ratingDiffs":{"standard":0},"performance":2447,"performances":{"standard":2447}},{"name":"Schmidek,
+        Emil","title":"IM","rating":2427,"fideId":12908150,"team":"Schachfreunde Berlin
+        1903","fed":"GER","played":7,"score":4,"ratingDiff":6,"ratingsMap":{"standard":2427},"ratingDiffs":{"standard":6},"performance":2491,"performances":{"standard":2491}},{"name":"Asllani,
+        Muhamet","title":"CM","rating":2251,"fideId":22100300,"team":"Drejtesia Trokadero","fed":"KOS","played":1,"score":1,"ratingDiff":15,"ratingsMap":{"standard":2251},"ratingDiffs":{"standard":15},"performance":3227,"performances":{"standard":3227}},{"name":"Mehmeti,
+        Shqipdon","rating":2148,"fideId":22100610,"team":"Drejtesia Trokadero","fed":"KOS","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2148},"ratingDiffs":{"standard":-4},"performance":1613,"performances":{"standard":1613}},{"name":"Florstedt,
+        Johannes","title":"FM","rating":2413,"fideId":12922293,"team":"Schachfreunde
+        Berlin 1903","fed":"GER","played":7,"score":5,"ratingDiff":12,"ratingsMap":{"standard":2413},"ratingDiffs":{"standard":12},"performance":2538,"performances":{"standard":2538}},{"name":"Poltorak,
+        Sebastian","title":"IM","rating":2413,"fideId":1199498,"team":"Schachfreunde
+        Berlin 1903","fed":"POL","played":7,"score":3,"ratingDiff":-12,"ratingsMap":{"standard":2413},"ratingDiffs":{"standard":-12},"performance":2282,"performances":{"standard":2282}},{"name":"Ermeni,
+        Avni","title":"FM","rating":2126,"fideId":912840,"team":"Drejtesia Trokadero","fed":"KOS","played":1,"score":0.5,"ratingDiff":7,"ratingsMap":{"standard":2126},"ratingDiffs":{"standard":7},"performance":2413,"performances":{"standard":2413}},{"name":"Fejzullahu,
+        Afrim","title":"FM","rating":2207,"fideId":905631,"team":"Drejtesia Trokadero","fed":"KOS","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2207},"ratingDiffs":{"standard":-5},"performance":1593,"performances":{"standard":1593}},{"name":"Polzin,
+        Rainer","title":"GM","rating":2393,"fideId":4610741,"team":"Schachfreunde
+        Berlin 1903","fed":"GER","played":7,"score":5,"ratingDiff":3,"ratingsMap":{"standard":2393},"ratingDiffs":{"standard":3},"performance":2409,"performances":{"standard":2409}},{"name":"Stevik,
+        Patrik","title":"FM","rating":2312,"fideId":14944812,"team":"SK Modra","fed":"SVK","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2312},"ratingDiffs":{"standard":-4},"performance":1767,"performances":{"standard":1767}},{"name":"Ragger,
+        Markus","title":"GM","rating":2567,"fideId":1610856,"team":"SG Riehen","fed":"AUT","played":6,"score":3.5,"ratingDiff":-1,"ratingsMap":{"standard":2567},"ratingDiffs":{"standard":-1},"performance":2551,"performances":{"standard":2551}},{"name":"Rosner,
+        Jonas","title":"IM","rating":2431,"fideId":24608513,"team":"SG Riehen","fed":"GER","played":7,"score":4.5,"ratingDiff":10,"ratingsMap":{"standard":2431},"ratingDiffs":{"standard":10},"performance":2537,"performances":{"standard":2537}},{"name":"Federic,
+        Jozef","title":"FM","rating":2219,"fideId":14910659,"team":"SK Modra","fed":"SVK","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2219},"ratingDiffs":{"standard":-5},"performance":1631,"performances":{"standard":1631}},{"name":"Banas,
+        Kamil","rating":2194,"fideId":14902141,"team":"SK Modra","fed":"SVK","played":1,"score":0.5,"ratingDiff":6,"ratingsMap":{"standard":2194},"ratingDiffs":{"standard":6},"performance":2429,"performances":{"standard":2429}},{"name":"Brunner,
+        Nicolas","title":"IM","rating":2429,"fideId":620246,"team":"SG Riehen","fed":"FRA","played":4,"score":1.5,"ratingDiff":-10,"ratingsMap":{"standard":2429},"ratingDiffs":{"standard":-10},"performance":2251,"performances":{"standard":2251}},{"name":"Haag,
+        Gregor","title":"FM","rating":2403,"fideId":24680931,"team":"SG Riehen","fed":"GER","played":7,"score":5,"ratingDiff":9,"ratingsMap":{"standard":2403},"ratingDiffs":{"standard":9},"performance":2496,"performances":{"standard":2496}},{"name":"Lednicky,
+        Martin","rating":2109,"fideId":14904535,"team":"SK Modra","fed":"SVK","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2109},"ratingDiffs":{"standard":-3},"performance":1603,"performances":{"standard":1603}},{"name":"Skreno,
+        Vladimir","title":"CM","rating":2108,"fideId":14902893,"team":"SK Modra","fed":"SVK","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2108},"ratingDiffs":{"standard":-4},"performance":1527,"performances":{"standard":1527}},{"name":"Jaeggi,
+        Dorian","title":"FM","rating":2327,"fideId":1306294,"team":"SG Riehen","fed":"SUI","played":5,"score":3,"ratingDiff":2,"ratingsMap":{"standard":2327},"ratingDiffs":{"standard":2},"performance":2343,"performances":{"standard":2343}},{"name":"Collin,
+        Moritz Valentin","title":"FM","rating":2282,"fideId":1342932,"team":"SG Riehen","fed":"SUI","played":7,"score":5.5,"ratingDiff":27,"ratingsMap":{"standard":2282},"ratingDiffs":{"standard":27},"performance":2441,"performances":{"standard":2441}},{"name":"Kostelny,
+        Jozef","rating":2093,"fideId":14903458,"team":"SK Modra","fed":"SVK","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2093},"ratingDiffs":{"standard":-5},"performance":1482,"performances":{"standard":1482}},{"name":"Movsesian,
+        Sergei","title":"GM","rating":2600,"fideId":310204,"team":"Sigil Fund Pardubice","fed":"ARM","played":6,"score":4,"ratingDiff":6,"ratingsMap":{"standard":2600},"ratingDiffs":{"standard":6},"performance":2672,"performances":{"standard":2672}},{"name":"Rozentalis,
+        Eduardas","title":"GM","rating":2446,"fideId":12800023,"team":"SMK Juoda Balta","fed":"LTU","played":0,"ratingsMap":{"standard":2446}},{"name":"Kienboeck,
+        Benjamin","title":"FM","rating":2250,"fideId":1649353,"team":"SMK Juoda Balta","fed":"AUT","played":1,"score":0.5,"ratingDiff":7,"ratingsMap":{"standard":2250},"ratingDiffs":{"standard":7},"performance":2539,"performances":{"standard":2539}},{"name":"Hracek,
+        Zbynek","title":"GM","rating":2539,"fideId":300071,"team":"Sigil Fund Pardubice","fed":"CZE","played":7,"score":4,"ratingDiff":-1,"ratingsMap":{"standard":2539},"ratingDiffs":{"standard":-1},"performance":2521,"performances":{"standard":2521}},{"name":"Nemec,
+        Jachym","title":"FM","rating":2448,"fideId":23716525,"team":"Sigil Fund Pardubice","fed":"CZE","played":7,"score":4,"ratingDiff":4,"ratingsMap":{"standard":2448},"ratingDiffs":{"standard":4},"performance":2498,"performances":{"standard":2498}},{"name":"Novkovic,
+        Milan","title":"IM","rating":2326,"fideId":1613103,"team":"SMK Juoda Balta","fed":"AUT","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2326},"ratingDiffs":{"standard":-3},"performance":1648,"performances":{"standard":1648}},{"name":"Mierins,
+        Emils Janis","rating":2199,"fideId":11616830,"team":"SMK Juoda Balta","fed":"LAT","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2199},"ratingDiffs":{"standard":-5},"performance":1576,"performances":{"standard":1576}},{"name":"Delgerdalai,
+        Bayarjavkhlan","title":"FM","rating":2376,"fideId":23727276,"team":"Sigil
+        Fund Pardubice","fed":"CZE","played":7,"score":3.5,"ratingDiff":-2,"ratingsMap":{"standard":2376},"ratingDiffs":{"standard":-2},"performance":2360,"performances":{"standard":2360}},{"name":"Stehno,
+        Pavel","rating":2305,"fideId":313467,"team":"Sigil Fund Pardubice","fed":"CZE","played":7,"score":3.5,"ratingDiff":3,"ratingsMap":{"standard":2305},"ratingDiffs":{"standard":3},"performance":2338,"performances":{"standard":2338}},{"name":"Pfaltz,
+        Maximilian","rating":2105,"fideId":1346741,"team":"SMK Juoda Balta","fed":"SUI","played":1,"score":0,"ratingDiff":-10,"ratingsMap":{"standard":2105},"ratingDiffs":{"standard":-10},"performance":1505,"performances":{"standard":1505}},{"name":"Kraucenka,
+        Justas","rating":1665,"fideId":12835790,"team":"SMK Juoda Balta","fed":"LTU","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":1665},"ratingDiffs":{"standard":-3},"performance":1447,"performances":{"standard":1447}},{"name":"Bujnoch,
+        Radek","title":"FM","rating":2247,"fideId":313300,"team":"Sigil Fund Pardubice","fed":"CZE","played":7,"score":4,"ratingDiff":4,"ratingsMap":{"standard":2247},"ratingDiffs":{"standard":4},"performance":2245,"performances":{"standard":2245}},{"name":"Pilgaard,
+        Kim","title":"IM","rating":2353,"fideId":1400657,"team":"Bronshoj Skak Forening","fed":"DEN","played":1,"score":0.5,"ratingDiff":2,"ratingsMap":{"standard":2353},"ratingDiffs":{"standard":2},"performance":2477,"performances":{"standard":2477}},{"name":"Lopez
+        Martinez, Josep Manuel","title":"GM","rating":2477,"fideId":2212943,"team":"Silla-Integrant
+        Col.lectius","fed":"ESP","played":7,"score":5,"ratingDiff":7,"ratingsMap":{"standard":2477},"ratingDiffs":{"standard":7},"performance":2542,"performances":{"standard":2542}},{"name":"Olsen,
+        Filip Boe","title":"IM","rating":2451,"fideId":1440640,"team":"Silla-Integrant
+        Col.lectius","fed":"DEN","played":7,"score":4.5,"ratingDiff":1,"ratingsMap":{"standard":2451},"ratingDiffs":{"standard":1},"performance":2459,"performances":{"standard":2459}},{"name":"Carstensen,
+        Jacob","title":"IM","rating":2316,"fideId":1404180,"team":"Bronshoj Skak Forening","fed":"DEN","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2316},"ratingDiffs":{"standard":-3},"performance":1651,"performances":{"standard":1651}},{"name":"Thuesen,
+        Mogens","rating":2113,"fideId":1400878,"team":"Bronshoj Skak Forening","fed":"DEN","played":1,"score":0.5,"ratingDiff":7,"ratingsMap":{"standard":2113},"ratingDiffs":{"standard":7},"performance":2422,"performances":{"standard":2422}},{"name":"Domingo
+        Nunez, Ruben","title":"IM","rating":2422,"fideId":22245570,"team":"Silla-Integrant
+        Col.lectius","fed":"ESP","played":7,"score":3.5,"ratingDiff":-11,"ratingsMap":{"standard":2422},"ratingDiffs":{"standard":-11},"performance":2296,"performances":{"standard":2296}},{"name":"Luque
+        Saiz, Andres","title":"FM","rating":2343,"fideId":24510793,"team":"Silla-Integrant
+        Col.lectius","fed":"ESP","played":7,"score":4.5,"ratingDiff":0,"ratingsMap":{"standard":2343},"ratingDiffs":{"standard":0},"performance":2332,"performances":{"standard":2332}},{"name":"Kryger,
+        Oksana","title":"WIM","rating":2075,"fideId":1404695,"team":"Bronshoj Skak
+        Forening","fed":"DEN","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2075},"ratingDiffs":{"standard":-3},"performance":1543,"performances":{"standard":1543}},{"name":"Paaske,
+        Asger","rating":2090,"fideId":1404750,"team":"Bronshoj Skak Forening","fed":"DEN","played":1,"score":0,"ratingDiff":-7,"ratingsMap":{"standard":2090},"ratingDiffs":{"standard":-7},"performance":1406,"performances":{"standard":1406}},{"name":"Garcia
+        Molina, Jose","title":"FM","rating":2206,"fideId":32030592,"team":"Silla-Integrant
+        Col.lectius","fed":"ESP","played":7,"score":3,"ratingDiff":-18,"ratingsMap":{"standard":2206},"ratingDiffs":{"standard":-18},"performance":2118,"performances":{"standard":2118}},{"name":"Garcia
+        Domingo, Jose Antonio","title":"CM","rating":2149,"fideId":2221845,"team":"Silla-Integrant
+        Col.lectius","fed":"ESP","played":1,"score":1,"ratingDiff":7,"ratingsMap":{"standard":2149},"ratingDiffs":{"standard":7},"performance":2840,"performances":{"standard":2840}},{"name":"Christensen,
+        Esben","rating":2040,"fideId":1402307,"team":"Bronshoj Skak Forening","fed":"DEN","played":1,"score":0,"ratingDiff":-7,"ratingsMap":{"standard":2040},"ratingDiffs":{"standard":-7},"performance":1349,"performances":{"standard":1349}},{"name":"Erdos,
+        Viktor","title":"GM","rating":2538,"fideId":719978,"team":"MTK Budapest","fed":"HUN","played":7,"score":4.5,"ratingDiff":3,"ratingsMap":{"standard":2538},"ratingDiffs":{"standard":3},"performance":2562,"performances":{"standard":2562}},{"name":"Roberson,
+        Peter T","title":"IM","rating":2451,"fideId":412384,"team":"Sharks 4NCL","fed":"ENG","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2451},"ratingDiffs":{"standard":-4},"performance":1738,"performances":{"standard":1738}},{"name":"Willis,
+        Rupert","rating":2117,"fideId":1506951,"team":"Sharks 4NCL","fed":"ENG","played":1,"score":0.5,"ratingDiff":7,"ratingsMap":{"standard":2117},"ratingDiffs":{"standard":7},"performance":2434,"performances":{"standard":2434}},{"name":"Juhasz,
+        Agoston","title":"IM","rating":2434,"fideId":778346,"team":"MTK Budapest","fed":"HUN","played":7,"score":3,"ratingDiff":-13,"ratingsMap":{"standard":2434},"ratingDiffs":{"standard":-13},"performance":2296,"performances":{"standard":2296}},{"name":"Pribelszky,
+        Bence","title":"IM","rating":2403,"fideId":769738,"team":"MTK Budapest","fed":"HUN","played":7,"score":5,"ratingDiff":7,"ratingsMap":{"standard":2403},"ratingDiffs":{"standard":7},"performance":2456,"performances":{"standard":2456}},{"name":"McCarthy,
+        Kevin C","rating":1942,"fideId":470775,"team":"Sharks 4NCL","fed":"ENG","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":1942},"ratingDiffs":{"standard":-2},"performance":1603,"performances":{"standard":1603}},{"name":"Varnam,
+        Liam D","rating":2097,"fideId":410950,"team":"Sharks 4NCL","fed":"ENG","played":1,"score":1,"ratingDiff":16,"ratingsMap":{"standard":2097},"ratingDiffs":{"standard":16},"performance":3160,"performances":{"standard":3160}},{"name":"Papp,
+        Levente","title":"FM","rating":2360,"fideId":751243,"team":"MTK Budapest","fed":"HUN","played":7,"score":4.5,"ratingDiff":3,"ratingsMap":{"standard":2360},"ratingDiffs":{"standard":3},"performance":2382,"performances":{"standard":2382}},{"name":"Juhasz,
+        Armin","title":"IM","rating":2375,"fideId":724270,"team":"MTK Budapest","fed":"HUN","played":7,"score":5,"ratingDiff":4,"ratingsMap":{"standard":2375},"ratingDiffs":{"standard":4},"performance":2403,"performances":{"standard":2403}},{"name":"Murphy,
+        Hugh W","rating":2008,"fideId":422444,"team":"Sharks 4NCL","fed":"ENG","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2008},"ratingDiffs":{"standard":-2},"performance":1575,"performances":{"standard":1575}},{"name":"Lentzos,
+        Ioanis","rating":2134,"fideId":4255470,"team":"Sharks 4NCL","fed":"GRE","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2134},"ratingDiffs":{"standard":-5},"performance":1513,"performances":{"standard":1513}},{"name":"Matyassy,
+        Lazar","title":"FM","rating":2313,"fideId":17005167,"team":"MTK Budapest","fed":"HUN","played":7,"score":4,"ratingDiff":-11,"ratingsMap":{"standard":2313},"ratingDiffs":{"standard":-11},"performance":2237,"performances":{"standard":2237}},{"name":"Pasti,
+        Aron","title":"IM","rating":2366,"fideId":785857,"team":"SK Dunajska Streda","fed":"HUN","played":3,"score":0,"ratingDiff":-7,"ratingsMap":{"standard":2366},"ratingDiffs":{"standard":-7},"performance":1794,"performances":{"standard":1794}},{"name":"Rigo,
+        Zsolt","title":"IM","rating":2403,"fideId":14903172,"team":"SK Dunajska Streda","fed":"SVK","played":3,"score":1,"ratingDiff":-4,"ratingsMap":{"standard":2403},"ratingDiffs":{"standard":-4},"performance":2322,"performances":{"standard":2322}},{"name":"Nihal
+        Sarin","title":"GM","rating":2700,"fideId":25092340,"team":"BayeganPendik
+        chess sports","fed":"IND","played":6,"score":5,"ratingDiff":4,"ratingsMap":{"standard":2700},"ratingDiffs":{"standard":4},"performance":2742,"performances":{"standard":2742}},{"name":"Bagi,
+        Mate","title":"IM","rating":2431,"fideId":742570,"team":"SK Dunajska Streda","fed":"HUN","played":3,"score":2,"ratingDiff":5,"ratingsMap":{"standard":2431},"ratingDiffs":{"standard":5},"performance":2562,"performances":{"standard":2562}},{"name":"Varga,
+        Zoltan","title":"GM","rating":2286,"fideId":700509,"team":"SK Dunajska Streda","fed":"HUN","played":3,"score":2,"ratingDiff":9,"ratingsMap":{"standard":2286},"ratingDiffs":{"standard":9},"performance":2543,"performances":{"standard":2543}},{"name":"Csonka,
+        Attila Istvan","title":"IM","rating":2301,"fideId":716529,"team":"SK Dunajska
+        Streda","fed":"HUN","played":3,"score":1.5,"ratingDiff":3,"ratingsMap":{"standard":2301},"ratingDiffs":{"standard":3},"performance":2383,"performances":{"standard":2383}},{"name":"Takacs,
+        Laszlo","title":"FM","rating":2267,"fideId":14918854,"team":"SK Dunajska Streda","fed":"SVK","played":3,"score":0.5,"ratingDiff":-15,"ratingsMap":{"standard":2267},"ratingDiffs":{"standard":-15},"performance":2061,"performances":{"standard":2061}},{"name":"Alexakis,
+        Dimitris","title":"IM","rating":2548,"fideId":4277023,"team":"Ippotis Rhodes
+        chess club","fed":"GRE","played":3,"score":1,"ratingDiff":-4,"ratingsMap":{"standard":2548},"ratingDiffs":{"standard":-4},"performance":2446,"performances":{"standard":2446}},{"name":"Patrelakis,
+        Evaggelos","title":"IM","rating":2437,"fideId":4295102,"team":"Ippotis Rhodes
+        chess club","fed":"GRE","played":3,"score":1,"ratingDiff":-1,"ratingsMap":{"standard":2437},"ratingDiffs":{"standard":-1},"performance":2427,"performances":{"standard":2427}},{"name":"Krallis,
+        Christos","title":"FM","rating":2403,"fideId":4298896,"team":"Ippotis Rhodes
+        chess club","fed":"GRE","played":3,"score":0.5,"ratingDiff":-5,"ratingsMap":{"standard":2403},"ratingDiffs":{"standard":-5},"performance":2256,"performances":{"standard":2256}},{"name":"Stamatiou,
+        Rodolfos","title":"FM","rating":2275,"fideId":25826530,"team":"Ippotis Rhodes
+        chess club","fed":"GRE","played":2,"score":0,"ratingDiff":-8,"ratingsMap":{"standard":2275},"ratingDiffs":{"standard":-8},"performance":1762,"performances":{"standard":1762}},{"name":"Sandalakis,
+        Nikolaos","title":"CM","rating":2206,"fideId":4222890,"team":"Ippotis Rhodes
+        chess club","fed":"GRE","played":3,"score":0.5,"ratingDiff":-1,"ratingsMap":{"standard":2206},"ratingDiffs":{"standard":-1},"performance":2210,"performances":{"standard":2210}},{"name":"Ivic,
+        Velimir","title":"GM","rating":2628,"fideId":950122,"team":"Alkaloid","fed":"SRB","played":4,"score":2,"ratingDiff":-8,"ratingsMap":{"standard":2628},"ratingDiffs":{"standard":-8},"performance":2441,"performances":{"standard":2441}},{"name":"Frendzas,
+        Panayotis","title":"IM","rating":2179,"fideId":4200420,"team":"Ippotis Rhodes
+        chess club","fed":"GRE","played":3,"score":1,"ratingDiff":4,"ratingsMap":{"standard":2179},"ratingDiffs":{"standard":4},"performance":2323,"performances":{"standard":2323}},{"name":"Keymer,
+        Vincent","title":"GM","rating":2755,"fideId":12940690,"team":"Novy Bor","fed":"GER","played":6,"score":5,"ratingDiff":9,"ratingsMap":{"standard":2755},"ratingDiffs":{"standard":9},"performance":2882,"performances":{"standard":2882}},{"name":"Noe,
+        Christopher","title":"GM","rating":2513,"fideId":24692018,"team":"De Sprenger
+        Echternach","fed":"GER","played":2,"score":1,"ratingDiff":4,"ratingsMap":{"standard":2513},"ratingDiffs":{"standard":4},"performance":2675,"performances":{"standard":2675}},{"name":"Sumets,
+        Andrey","title":"GM","rating":2520,"fideId":14105500,"team":"De Sprenger Echternach","fed":"UKR","played":2,"score":1,"ratingDiff":1,"ratingsMap":{"standard":2520},"ratingDiffs":{"standard":1},"performance":2576,"performances":{"standard":2576}},{"name":"Stork,
+        Oliver","title":"FM","rating":2365,"fideId":12955728,"team":"De Sprenger Echternach","fed":"GER","played":2,"score":0,"ratingDiff":-11,"ratingsMap":{"standard":2365},"ratingDiffs":{"standard":-11},"performance":1745,"performances":{"standard":1745}},{"name":"Carafizi,
+        Vasile","title":"FM","rating":2134,"fideId":4002539,"team":"De Sprenger Echternach","fed":"LUX","played":2,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2134},"ratingDiffs":{"standard":-5},"performance":1734,"performances":{"standard":1734}},{"name":"Gnichtel,
+        Gerd","rating":2130,"fideId":4637127,"team":"De Sprenger Echternach","fed":"GER","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2130},"ratingDiffs":{"standard":-2},"performance":1831,"performances":{"standard":1831}},{"name":"Densing,
+        Gerd","rating":1817,"fideId":24621013,"team":"De Sprenger Echternach","fed":"GER","played":2,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":1817},"ratingDiffs":{"standard":-3},"performance":1674,"performances":{"standard":1674}},{"name":"Feuerstack,
+        Aljoscha","title":"IM","rating":2452,"fideId":4681932,"team":"FC St. Pauli","fed":"GER","played":3,"score":0.5,"ratingDiff":-6,"ratingsMap":{"standard":2452},"ratingDiffs":{"standard":-6},"performance":2273,"performances":{"standard":2273}},{"name":"Krause,
+        Benedict","title":"IM","rating":2419,"fideId":12917990,"team":"FC St. Pauli","fed":"GER","played":3,"score":1,"ratingDiff":-1,"ratingsMap":{"standard":2419},"ratingDiffs":{"standard":-1},"performance":2408,"performances":{"standard":2408}},{"name":"Ertan,
+        Can","title":"IM","rating":2351,"fideId":6306330,"team":"FC St. Pauli","fed":"TUR","played":3,"score":0.5,"ratingDiff":-4,"ratingsMap":{"standard":2351},"ratingDiffs":{"standard":-4},"performance":2236,"performances":{"standard":2236}},{"name":"Krause,
+        Jonah","title":"FM","rating":2350,"fideId":12907910,"team":"FC St. Pauli","fed":"GER","played":3,"score":0.5,"ratingDiff":-9,"ratingsMap":{"standard":2350},"ratingDiffs":{"standard":-9},"performance":2219,"performances":{"standard":2219}},{"name":"Sawatzki,
+        Frank","title":"FM","rating":2337,"fideId":4613600,"team":"FC St. Pauli","fed":"GER","played":3,"score":0.5,"ratingDiff":-6,"ratingsMap":{"standard":2337},"ratingDiffs":{"standard":-6},"performance":2179,"performances":{"standard":2179}},{"name":"Lupulescu,
+        Constantin","title":"GM","rating":2577,"fideId":1207822,"team":"SuperChess","fed":"ROU","played":3,"score":2.5,"ratingDiff":0,"ratingsMap":{"standard":2577},"ratingDiffs":{"standard":0},"performance":2508,"performances":{"standard":2508}},{"name":"Eberle,
+        Triona","rating":2008,"fideId":34627731,"team":"FC St. Pauli","fed":"GER","played":3,"score":1,"ratingDiff":14,"ratingsMap":{"standard":2008},"ratingDiffs":{"standard":14},"performance":2298,"performances":{"standard":2298}},{"name":"Eljanov,
+        Pavel","title":"GM","rating":2657,"fideId":14102951,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"UKR","played":6,"score":3.5,"ratingDiff":-1,"ratingsMap":{"standard":2657},"ratingDiffs":{"standard":-1},"performance":2636,"performances":{"standard":2636}},{"name":"Petkidis,
+        Anthony","title":"IM","rating":2464,"fideId":24673390,"team":"HSK Lister Turm","fed":"GER","played":1,"score":0.5,"ratingDiff":3,"ratingsMap":{"standard":2464},"ratingDiffs":{"standard":3},"performance":2657,"performances":{"standard":2657}},{"name":"Knuedel,
+        Torben","title":"FM","rating":2382,"fideId":16208820,"team":"HSK Lister Turm","fed":"GER","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2382},"ratingDiffs":{"standard":-4},"performance":1843,"performances":{"standard":1843}},{"name":"Hoerstmann,
+        Martin","title":"FM","rating":2282,"fideId":4602730,"team":"HSK Lister Turm","fed":"GER","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2282},"ratingDiffs":{"standard":-2},"performance":1821,"performances":{"standard":1821}},{"name":"Gentemann,
+        Moritz","rating":2244,"fideId":4688007,"team":"HSK Lister Turm","fed":"GER","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2244},"ratingDiffs":{"standard":-3},"performance":1768,"performances":{"standard":1768}},{"name":"Nechitaylo,
+        Nikita","title":"FM","rating":2238,"fideId":34138161,"team":"HSK Lister Turm","fed":"GER","played":1,"score":0.5,"ratingDiff":7,"ratingsMap":{"standard":2238},"ratingDiffs":{"standard":7},"performance":2535,"performances":{"standard":2535}},{"name":"Hoerstmann,
+        Rudi","rating":2223,"fideId":4604075,"team":"HSK Lister Turm","fed":"GER","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2223},"ratingDiffs":{"standard":-3},"performance":1718,"performances":{"standard":1718}},{"name":"Pantzar,
+        Milton","title":"IM","rating":2433,"fideId":1721003,"team":"Lunds ASK","fed":"SWE","played":2,"score":0.5,"ratingDiff":0,"ratingsMap":{"standard":2433},"ratingDiffs":{"standard":0},"performance":2418,"performances":{"standard":2418}},{"name":"Sjodahl,
+        Pontus","title":"IM","rating":2431,"fideId":1700537,"team":"Lunds ASK","fed":"SWE","played":2,"score":0,"ratingDiff":-8,"ratingsMap":{"standard":2431},"ratingDiffs":{"standard":-8},"performance":1687,"performances":{"standard":1687}},{"name":"Ahlander,
+        Bjorn","title":"IM","rating":2382,"fideId":1700251,"team":"Lunds ASK","fed":"SWE","played":2,"score":1,"ratingDiff":3,"ratingsMap":{"standard":2382},"ratingDiffs":{"standard":3},"performance":2476,"performances":{"standard":2476}},{"name":"Dragicevic,
+        Drazen","title":"FM","rating":2334,"fideId":1707922,"team":"Lunds ASK","fed":"SWE","played":2,"score":0.5,"ratingDiff":-3,"ratingsMap":{"standard":2334},"ratingDiffs":{"standard":-3},"performance":2270,"performances":{"standard":2270}},{"name":"Olsson,
+        Linus","title":"FM","rating":2166,"fideId":1706098,"team":"Lunds ASK","fed":"SWE","played":2,"score":0.5,"ratingDiff":3,"ratingsMap":{"standard":2166},"ratingDiffs":{"standard":3},"performance":2251,"performances":{"standard":2251}},{"name":"Sigeman,
+        Johan","rating":2065,"fideId":1705601,"team":"Lunds ASK","fed":"SWE","played":2,"score":0,"ratingDiff":-7,"ratingsMap":{"standard":2065},"ratingDiffs":{"standard":-7},"performance":1551,"performances":{"standard":1551}},{"name":"Williams,
+        Simon K","title":"GM","rating":2426,"fideId":404454,"team":"Cheddleton Savills
+        Catering","fed":"ENG","played":3,"score":0.5,"ratingDiff":-3,"ratingsMap":{"standard":2426},"ratingDiffs":{"standard":-3},"performance":2326,"performances":{"standard":2326}},{"name":"Pert,
+        Richard G","title":"IM","rating":2414,"fideId":404748,"team":"Cheddleton Savills
+        Catering","fed":"ENG","played":3,"score":1,"ratingDiff":1,"ratingsMap":{"standard":2414},"ratingDiffs":{"standard":1},"performance":2432,"performances":{"standard":2432}},{"name":"Eggleston,
+        David J","title":"IM","rating":2357,"fideId":412120,"team":"Cheddleton Savills
+        Catering","fed":"ENG","played":3,"score":0.5,"ratingDiff":-5,"ratingsMap":{"standard":2357},"ratingDiffs":{"standard":-5},"performance":2201,"performances":{"standard":2201}},{"name":"Pert,
+        Max","title":"FM","rating":2221,"fideId":456845,"team":"Cheddleton Savills
+        Catering","fed":"ENG","played":3,"score":0.5,"ratingDiff":-6,"ratingsMap":{"standard":2221},"ratingDiffs":{"standard":-6},"performance":2134,"performances":{"standard":2134}},{"name":"Arkell,
+        Keith C","title":"GM","rating":2348,"fideId":400270,"team":"Cheddleton Savills
+        Catering","fed":"ENG","played":3,"score":0.5,"ratingDiff":-8,"ratingsMap":{"standard":2348},"ratingDiffs":{"standard":-8},"performance":2112,"performances":{"standard":2112}},{"name":"Pert,
+        Nina","title":"WCM","rating":2029,"fideId":456853,"team":"Cheddleton Savills
+        Catering","fed":"ENG","played":3,"score":0,"ratingDiff":-20,"ratingsMap":{"standard":2029},"ratingDiffs":{"standard":-20},"performance":1523,"performances":{"standard":1523}},{"name":"Camlar,
+        Arda","title":"IM","rating":2490,"fideId":44576692,"team":"Guzelbahce Satranc
+        Spor Kulubu","fed":"TUR","played":4,"score":2,"ratingDiff":3,"ratingsMap":{"standard":2490},"ratingDiffs":{"standard":3},"performance":2539,"performances":{"standard":2539}},{"name":"Yildiz,
+        Egehan","title":"FM","rating":2374,"fideId":44518072,"team":"Guzelbahce Satranc
+        Spor Kulubu","fed":"TUR","played":4,"score":0.5,"ratingDiff":-17,"ratingsMap":{"standard":2374},"ratingDiffs":{"standard":-17},"performance":2166,"performances":{"standard":2166}},{"name":"Burcu,
+        Cagatay","title":"FM","rating":2255,"fideId":6310630,"team":"Guzelbahce Satranc
+        Spor Kulubu","fed":"TUR","played":4,"score":1.5,"ratingDiff":8,"ratingsMap":{"standard":2255},"ratingDiffs":{"standard":8},"performance":2338,"performances":{"standard":2338}},{"name":"Dogan,
+        Umut Anil","title":"CM","rating":2238,"fideId":51618060,"team":"Guzelbahce
+        Satranc Spor Kulubu","fed":"TUR","played":4,"score":2,"ratingDiff":34,"ratingsMap":{"standard":2238},"ratingDiffs":{"standard":34},"performance":2400,"performances":{"standard":2400}},{"name":"Gur,
+        Ali","title":"CM","rating":2223,"fideId":51684349,"team":"Guzelbahce Satranc
+        Spor Kulubu","fed":"TUR","played":4,"score":3,"ratingDiff":34,"ratingsMap":{"standard":2223},"ratingDiffs":{"standard":34},"performance":2550,"performances":{"standard":2550}},{"name":"Karaca,
+        Yigit","rating":2183,"fideId":26314118,"team":"Guzelbahce Satranc Spor Kulubu","fed":"TUR","played":4,"score":2.5,"ratingDiff":34,"ratingsMap":{"standard":2183},"ratingDiffs":{"standard":34},"performance":2346,"performances":{"standard":2346}},{"name":"Baselmans,
+        Luuk","title":"FM","rating":2384,"fideId":1051008,"team":"De Stukkenjagers","fed":"NED","played":2,"score":1,"ratingDiff":5,"ratingsMap":{"standard":2384},"ratingDiffs":{"standard":5},"performance":2562,"performances":{"standard":2562}},{"name":"Van
+        Roon, Sjoerd","title":"FM","rating":2288,"fideId":1051075,"team":"De Stukkenjagers","fed":"NED","played":2,"score":0.5,"ratingDiff":0,"ratingsMap":{"standard":2288},"ratingDiffs":{"standard":0},"performance":2292,"performances":{"standard":2292}},{"name":"Bijlsma,
+        Nick","title":"FM","rating":2280,"fideId":1007041,"team":"De Stukkenjagers","fed":"NED","played":2,"score":0,"ratingDiff":-11,"ratingsMap":{"standard":2280},"ratingDiffs":{"standard":-11},"performance":1656,"performances":{"standard":1656}},{"name":"Froeyman,
+        Helmut","title":"FM","rating":2268,"fideId":203602,"team":"De Stukkenjagers","fed":"BEL","played":2,"score":0,"ratingDiff":-13,"ratingsMap":{"standard":2268},"ratingDiffs":{"standard":-13},"performance":1607,"performances":{"standard":1607}},{"name":"Baselmans,
+        Sam","rating":2264,"fideId":1048139,"team":"De Stukkenjagers","fed":"NED","played":2,"score":0,"ratingDiff":-12,"ratingsMap":{"standard":2264},"ratingDiffs":{"standard":-12},"performance":1624,"performances":{"standard":1624}},{"name":"Raats,
+        Joppe","rating":2252,"fideId":238902,"team":"De Stukkenjagers","fed":"BEL","played":2,"score":0,"ratingDiff":-15,"ratingsMap":{"standard":2252},"ratingDiffs":{"standard":-15},"performance":1542,"performances":{"standard":1542}},{"name":"Godart,
+        Francois","title":"IM","rating":2381,"fideId":208078,"team":"CE Gambit Bonnevoie
+        #1","fed":"BEL","played":3,"score":1,"ratingDiff":1,"ratingsMap":{"standard":2381},"ratingDiffs":{"standard":1},"performance":2409,"performances":{"standard":2409}},{"name":"Dishman,
+        Stephen","title":"FM","rating":2211,"fideId":403024,"team":"CE Gambit Bonnevoie
+        #1","fed":"ENG","played":2,"score":0,"ratingDiff":-7,"ratingsMap":{"standard":2211},"ratingDiffs":{"standard":-7},"performance":1668,"performances":{"standard":1668}},{"name":"Buhr,
+        Carl Christian, Dr.","title":"FM","rating":2248,"fideId":4619307,"team":"CE
+        Gambit Bonnevoie #1","fed":"GER","played":3,"score":0.5,"ratingDiff":-5,"ratingsMap":{"standard":2248},"ratingDiffs":{"standard":-5},"performance":2163,"performances":{"standard":2163}},{"name":"Bednarich,
+        Jan","title":"FM","rating":2206,"fideId":806730,"team":"CE Gambit Bonnevoie
+        #1","fed":"ITA","played":2,"score":0,"ratingDiff":-8,"ratingsMap":{"standard":2206},"ratingDiffs":{"standard":-8},"performance":1649,"performances":{"standard":1649}},{"name":"Filipovic,
+        Slobodan J","title":"CM","rating":2182,"fideId":939633,"team":"CE Gambit Bonnevoie
+        #1","fed":"SRB","played":3,"score":0.5,"ratingDiff":-12,"ratingsMap":{"standard":2182},"ratingDiffs":{"standard":-12},"performance":2026,"performances":{"standard":2026}},{"name":"Bjarnason,
+        Oskar","rating":2118,"fideId":2301237,"team":"CE Gambit Bonnevoie #1","fed":"ISL","played":3,"score":1.5,"ratingDiff":2,"ratingsMap":{"standard":2118},"ratingDiffs":{"standard":2},"performance":2148,"performances":{"standard":2148}},{"name":"Kjartansson,
+        Gudmundur","title":"GM","rating":2422,"fideId":2301318,"team":"Reykjavik chess
+        club","fed":"ISL","played":3,"score":1,"ratingDiff":-1,"ratingsMap":{"standard":2422},"ratingDiffs":{"standard":-1},"performance":2405,"performances":{"standard":2405}},{"name":"Domalchuk-Jonasson,
+        Aleksandr","title":"IM","rating":2373,"fideId":14142805,"team":"Reykjavik
+        chess club","fed":"ISL","played":3,"score":1,"ratingDiff":0,"ratingsMap":{"standard":2373},"ratingDiffs":{"standard":0},"performance":2364,"performances":{"standard":2364}},{"name":"Thorhallsson,
+        Throstur","title":"GM","rating":2391,"fideId":2300109,"team":"Reykjavik chess
+        club","fed":"ISL","played":3,"score":1.5,"ratingDiff":1,"ratingsMap":{"standard":2391},"ratingDiffs":{"standard":1},"performance":2406,"performances":{"standard":2406}},{"name":"Johannesson,
+        Ingvar Thor","title":"FM","rating":2256,"fideId":2301490,"team":"Reykjavik
+        chess club","fed":"ISL","played":3,"score":1,"ratingDiff":-2,"ratingsMap":{"standard":2256},"ratingDiffs":{"standard":-2},"performance":2234,"performances":{"standard":2234}},{"name":"Omarsson,
+        Adam","title":"CM","rating":2093,"fideId":2311453,"team":"Reykjavik chess
+        club","fed":"ISL","played":3,"score":1,"ratingDiff":9,"ratingsMap":{"standard":2093},"ratingDiffs":{"standard":9},"performance":2220,"performances":{"standard":2220}},{"name":"Jonsson,
+        Gauti Pall","rating":2134,"fideId":2309092,"team":"Reykjavik chess club","fed":"ISL","played":3,"score":0.5,"ratingDiff":-7,"ratingsMap":{"standard":2134},"ratingDiffs":{"standard":-7},"performance":2025,"performances":{"standard":2025}},{"name":"Straka,
+        Vojtech","title":"IM","rating":2414,"fideId":312509,"team":"SK Oaza Praha
+        loznice.cz","fed":"CZE","played":3,"score":1,"ratingDiff":-2,"ratingsMap":{"standard":2414},"ratingDiffs":{"standard":-2},"performance":2369,"performances":{"standard":2369}},{"name":"Svanda,
+        Ondrej","title":"IM","rating":2363,"fideId":359670,"team":"SK Oaza Praha loznice.cz","fed":"CZE","played":3,"score":0.5,"ratingDiff":-7,"ratingsMap":{"standard":2363},"ratingDiffs":{"standard":-7},"performance":2167,"performances":{"standard":2167}},{"name":"Svoboda,
+        Vaclav","rating":2376,"fideId":323551,"team":"SK Oaza Praha loznice.cz","fed":"CZE","played":3,"score":0.5,"ratingDiff":-8,"ratingsMap":{"standard":2376},"ratingDiffs":{"standard":-8},"performance":2147,"performances":{"standard":2147}},{"name":"Cuhra,
+        Martin","title":"FM","rating":2218,"fideId":327735,"team":"SK Oaza Praha loznice.cz","fed":"CZE","played":3,"score":1,"ratingDiff":4,"ratingsMap":{"standard":2218},"ratingDiffs":{"standard":4},"performance":2272,"performances":{"standard":2272}},{"name":"Kawulok,
+        Marek","rating":2219,"fideId":337005,"team":"SK Oaza Praha loznice.cz","fed":"CZE","played":3,"score":1,"ratingDiff":2,"ratingsMap":{"standard":2219},"ratingDiffs":{"standard":2},"performance":2244,"performances":{"standard":2244}},{"name":"Pirklova,
+        Hana","title":"WFM","rating":2076,"fideId":313777,"team":"SK Oaza Praha loznice.cz","fed":"CZE","played":3,"score":0,"ratingDiff":-13,"ratingsMap":{"standard":2076},"ratingDiffs":{"standard":-13},"performance":1502,"performances":{"standard":1502}},{"name":"Sylvan,
+        Jacob","title":"IM","rating":2303,"fideId":1402137,"team":"Skakklubben Nordkalotten","fed":"DEN","played":2,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2303},"ratingDiffs":{"standard":-5},"performance":1681,"performances":{"standard":1681}},{"name":"Kristensen,
+        Kaare Hove","title":"IM","rating":2270,"fideId":1400940,"team":"Skakklubben
+        Nordkalotten","fed":"DEN","played":2,"score":1,"ratingDiff":7,"ratingsMap":{"standard":2270},"ratingDiffs":{"standard":7},"performance":2410,"performances":{"standard":2410}},{"name":"Hove,
+        Esben Kjems","title":"FM","rating":2273,"fideId":1401505,"team":"Skakklubben
+        Nordkalotten","fed":"DEN","played":2,"score":0.5,"ratingDiff":-5,"ratingsMap":{"standard":2273},"ratingDiffs":{"standard":-5},"performance":2162,"performances":{"standard":2162}},{"name":"Nielsen,
+        Lars Aaes","title":"FM","rating":2177,"fideId":1401726,"team":"Skakklubben
+        Nordkalotten","fed":"DEN","played":2,"score":0.5,"ratingDiff":-1,"ratingsMap":{"standard":2177},"ratingDiffs":{"standard":-1},"performance":2159,"performances":{"standard":2159}},{"name":"Cvitan,
+        Ognjen","title":"GM","rating":2387,"fideId":14500086,"team":"SG Riehen","fed":"CRO","played":6,"score":4.5,"ratingDiff":11,"ratingsMap":{"standard":2387},"ratingDiffs":{"standard":11},"performance":2529,"performances":{"standard":2529}},{"name":"Jakobsen,
+        Peter","title":"FM","rating":2166,"fideId":1401440,"team":"Skakklubben Nordkalotten","fed":"DEN","played":2,"score":0.5,"ratingDiff":-3,"ratingsMap":{"standard":2166},"ratingDiffs":{"standard":-3},"performance":2106,"performances":{"standard":2106}},{"name":"Noer,
+        Martin Stampe","rating":1932,"fideId":1412221,"team":"Skakklubben Nordkalotten","fed":"DEN","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":1932},"ratingDiffs":{"standard":-2},"performance":1482,"performances":{"standard":1482}},{"name":"Vagman,
+        Roy","title":"IM","rating":2383,"fideId":2828995,"team":"Rishon Le Zion #2","fed":"ISR","played":3,"score":1,"ratingDiff":1,"ratingsMap":{"standard":2383},"ratingDiffs":{"standard":1},"performance":2423,"performances":{"standard":2423}},{"name":"Galburd,
+        Yan","title":"IM","rating":2418,"fideId":2808528,"team":"Rishon Le Zion #2","fed":"ISR","played":2,"score":1,"ratingDiff":2,"ratingsMap":{"standard":2418},"ratingDiffs":{"standard":2},"performance":2498,"performances":{"standard":2498}},{"name":"Zakin,
+        Ilay","title":"FM","rating":2308,"fideId":2848279,"team":"Rishon Le Zion #2","fed":"ISR","played":3,"score":1,"ratingDiff":1,"ratingsMap":{"standard":2308},"ratingDiffs":{"standard":1},"performance":2314,"performances":{"standard":2314}},{"name":"Ribstein,
+        Orel","rating":2138,"fideId":2826534,"team":"Rishon Le Zion #2","fed":"ISR","played":3,"score":2,"ratingDiff":58,"ratingsMap":{"standard":2138},"ratingDiffs":{"standard":58},"performance":2520,"performances":{"standard":2520}},{"name":"Barak,
+        Gil","title":"CM","rating":2211,"fideId":2812690,"team":"Rishon Le Zion #2","fed":"ISR","played":2,"score":0.5,"ratingDiff":-3,"ratingsMap":{"standard":2211},"ratingDiffs":{"standard":-3},"performance":2153,"performances":{"standard":2153}},{"name":"Azoulay,
+        Yehonatan","rating":2136,"fideId":2839415,"team":"Rishon Le Zion #2","fed":"ISR","played":3,"score":1,"ratingDiff":6,"ratingsMap":{"standard":2136},"ratingDiffs":{"standard":6},"performance":2179,"performances":{"standard":2179}},{"name":"Alonso
+        Rosell, Alvar","title":"GM","rating":2538,"fideId":2270544,"team":"Silla-Integrant
+        Col.lectius","fed":"ESP","played":6,"score":4.5,"ratingDiff":10,"ratingsMap":{"standard":2538},"ratingDiffs":{"standard":10},"performance":2666,"performances":{"standard":2666}},{"name":"Tarhan,
+        Adar","title":"IM","rating":2432,"fideId":34544712,"team":"Pausa Chess Team","fed":"TUR","played":4,"score":0.5,"ratingDiff":-9,"ratingsMap":{"standard":2432},"ratingDiffs":{"standard":-9},"performance":2222,"performances":{"standard":2222}},{"name":"Durak,
+        Can","title":"IM","rating":2425,"fideId":44552971,"team":"Pausa Chess Team","fed":"TUR","played":4,"score":3,"ratingDiff":13,"ratingsMap":{"standard":2425},"ratingDiffs":{"standard":13},"performance":2663,"performances":{"standard":2663}},{"name":"Oktem,
+        Ege Tuna","title":"FM","rating":2367,"fideId":26314363,"team":"Pausa Chess
+        Team","fed":"TUR","played":4,"score":3,"ratingDiff":24,"ratingsMap":{"standard":2367},"ratingDiffs":{"standard":24},"performance":2596,"performances":{"standard":2596}},{"name":"Aydin,
+        Gulenay","title":"WIM","rating":2237,"fideId":34557431,"team":"Pausa Chess
+        Team","fed":"TUR","played":4,"score":1,"ratingDiff":-5,"ratingsMap":{"standard":2237},"ratingDiffs":{"standard":-5},"performance":2185,"performances":{"standard":2185}},{"name":"Senel,
+        Hayri Beyhun","title":"FM","rating":2129,"fideId":26314690,"team":"Pausa Chess
+        Team","fed":"TUR","played":4,"score":1,"ratingDiff":-8,"ratingsMap":{"standard":2129},"ratingDiffs":{"standard":-8},"performance":2086,"performances":{"standard":2086}},{"name":"Yaramis,
+        Hakan","rating":1978,"fideId":6304613,"team":"Pausa Chess Team","fed":"TUR","played":4,"score":3.5,"ratingDiff":50,"ratingsMap":{"standard":1978},"ratingDiffs":{"standard":50},"performance":2512,"performances":{"standard":2512}},{"name":"Stefansson,
+        Vignir Vatnar","title":"GM","rating":2506,"fideId":2308649,"team":"Breidablik","fed":"ISL","played":3,"score":1.5,"ratingDiff":-2,"ratingsMap":{"standard":2506},"ratingDiffs":{"standard":-2},"performance":2467,"performances":{"standard":2467}},{"name":"Heimisson,
+        Hilmir Freyr","title":"IM","rating":2291,"fideId":2309998,"team":"Breidablik","fed":"ISL","played":3,"score":1.5,"ratingDiff":4,"ratingsMap":{"standard":2291},"ratingDiffs":{"standard":4},"performance":2396,"performances":{"standard":2396}},{"name":"Johannsson,
+        Birkir Isak","rating":2258,"fideId":2314673,"team":"Breidablik","fed":"ISL","played":3,"score":0.5,"ratingDiff":-15,"ratingsMap":{"standard":2258},"ratingDiffs":{"standard":-15},"performance":2048,"performances":{"standard":2048}},{"name":"Briem,
+        Benedikt","rating":2225,"fideId":2315432,"team":"Breidablik","fed":"ISL","played":3,"score":1,"ratingDiff":-1,"ratingsMap":{"standard":2225},"ratingDiffs":{"standard":-1},"performance":2217,"performances":{"standard":2217}},{"name":"Briem,
+        Stephan","rating":2189,"fideId":2312506,"team":"Breidablik","fed":"ISL","played":3,"score":0.5,"ratingDiff":-6,"ratingsMap":{"standard":2189},"ratingDiffs":{"standard":-6},"performance":2096,"performances":{"standard":2096}},{"name":"Heidarsson,
+        Arnar Milutin","rating":2085,"fideId":2312875,"team":"Breidablik","fed":"ISL","played":3,"score":1,"ratingDiff":3,"ratingsMap":{"standard":2085},"ratingDiffs":{"standard":3},"performance":2126,"performances":{"standard":2126}},{"name":"Giri,
+        Anish","title":"GM","rating":2759,"fideId":24116068,"team":"BayeganPendik
+        chess sports","fed":"NED","played":5,"score":4,"ratingDiff":7,"ratingsMap":{"standard":2759},"ratingDiffs":{"standard":7},"performance":2878,"performances":{"standard":2878}},{"name":"Indjic,
+        Aleksandar","title":"GM","rating":2618,"fideId":911925,"team":"Alkaloid","fed":"SRB","played":3,"score":2,"ratingDiff":1,"ratingsMap":{"standard":2618},"ratingDiffs":{"standard":1},"performance":2649,"performances":{"standard":2649}},{"name":"Gukesh
+        D","title":"GM","rating":2752,"fideId":46616543,"team":"SuperChess","fed":"IND","played":5,"score":4,"ratingDiff":11,"ratingsMap":{"standard":2752},"ratingDiffs":{"standard":11},"performance":2926,"performances":{"standard":2926}},{"name":"Suleymanli,
+        Aydin","title":"GM","rating":2614,"fideId":13413937,"team":"Vugar Gashimov","fed":"AZE","played":5,"score":3.5,"ratingDiff":10,"ratingsMap":{"standard":2614},"ratingDiffs":{"standard":10},"performance":2761,"performances":{"standard":2761}},{"name":"Smeets,
+        Jan","title":"GM","rating":2562,"fideId":1007246,"team":"LSG Leiden","fed":"NED","played":3,"score":1,"ratingDiff":-7,"ratingsMap":{"standard":2562},"ratingDiffs":{"standard":-7},"performance":2391,"performances":{"standard":2391}},{"name":"De
+        Jong, Jan-Willem","title":"IM","rating":2420,"fideId":1008641,"team":"LSG
+        Leiden","fed":"NED","played":4,"score":1.5,"ratingDiff":-3,"ratingsMap":{"standard":2420},"ratingDiffs":{"standard":-3},"performance":2364,"performances":{"standard":2364}},{"name":"Bosman,
+        Michiel","title":"IM","rating":2306,"fideId":1000721,"team":"LSG Leiden","fed":"NED","played":4,"score":1,"ratingDiff":-5,"ratingsMap":{"standard":2306},"ratingDiffs":{"standard":-5},"performance":2217,"performances":{"standard":2217}},{"name":"Sirin,
+        Atakan","title":"FM","rating":2346,"fideId":6303307,"team":"LSG Leiden","fed":"TUR","played":4,"score":3.5,"ratingDiff":36,"ratingsMap":{"standard":2346},"ratingDiffs":{"standard":36},"performance":2743,"performances":{"standard":2743}},{"name":"Roobol,
+        Martin","title":"FM","rating":2262,"fideId":1004468,"team":"LSG Leiden","fed":"NED","played":4,"score":2.5,"ratingDiff":10,"ratingsMap":{"standard":2262},"ratingDiffs":{"standard":10},"performance":2353,"performances":{"standard":2353}},{"name":"Hofman,
+        Marnix","rating":2218,"fideId":1008668,"team":"LSG Leiden","fed":"NED","played":2,"score":0,"ratingDiff":-21,"ratingsMap":{"standard":2218},"ratingDiffs":{"standard":-21},"performance":1399,"performances":{"standard":1399}},{"name":"Seel,
+        Christian, Dr.","title":"IM","rating":2481,"fideId":4663098,"team":"KSK Rochade
+        (BEL)","fed":"GER","played":4,"score":1.5,"ratingDiff":-3,"ratingsMap":{"standard":2481},"ratingDiffs":{"standard":-3},"performance":2436,"performances":{"standard":2436}},{"name":"Nagy,
+        Gabor","title":"GM","rating":2441,"fideId":737119,"team":"KSK Rochade (BEL)","fed":"HUN","played":4,"score":1,"ratingDiff":-7,"ratingsMap":{"standard":2441},"ratingDiffs":{"standard":-7},"performance":2305,"performances":{"standard":2305}},{"name":"Glek,
+        Igor","title":"GM","rating":2432,"fideId":4100484,"team":"KSK Rochade (BEL)","fed":"BEL","played":4,"score":2.5,"ratingDiff":7,"ratingsMap":{"standard":2432},"ratingDiffs":{"standard":7},"performance":2561,"performances":{"standard":2561}},{"name":"Berczes,
+        David","title":"GM","rating":2419,"fideId":722960,"team":"KSK Rochade (BEL)","fed":"HUN","played":4,"score":0.5,"ratingDiff":-15,"ratingsMap":{"standard":2419},"ratingDiffs":{"standard":-15},"performance":2087,"performances":{"standard":2087}},{"name":"Harff,
+        Marcel","title":"FM","rating":2319,"fideId":24621382,"team":"KSK Rochade (BEL)","fed":"GER","played":3,"score":2,"ratingDiff":7,"ratingsMap":{"standard":2319},"ratingDiffs":{"standard":7},"performance":2503,"performances":{"standard":2503}},{"name":"Meessen,
+        Rudolf","title":"FM","rating":2200,"fideId":202029,"team":"KSK Rochade (BEL)","fed":"BEL","played":3,"score":1,"ratingDiff":-2,"ratingsMap":{"standard":2200},"ratingDiffs":{"standard":-2},"performance":2184,"performances":{"standard":2184}},{"name":"Laurusas,
+        Tomas","title":"GM","rating":2504,"fideId":12803731,"team":"Vilnius MRU-ROSK
+        Consulting","fed":"LTU","played":4,"score":1.5,"ratingDiff":-5,"ratingsMap":{"standard":2504},"ratingDiffs":{"standard":-5},"performance":2413,"performances":{"standard":2413}},{"name":"Pultinevicius,
+        Paulius","title":"GM","rating":2532,"fideId":12809390,"team":"Vilnius MRU-ROSK
+        Consulting","fed":"LTU","played":4,"score":3,"ratingDiff":4,"ratingsMap":{"standard":2532},"ratingDiffs":{"standard":4},"performance":2604,"performances":{"standard":2604}},{"name":"Klabis,
+        Rokas","title":"IM","rating":2391,"fideId":12805246,"team":"Vilnius MRU-ROSK
+        Consulting","fed":"LTU","played":4,"score":1,"ratingDiff":-10,"ratingsMap":{"standard":2391},"ratingDiffs":{"standard":-10},"performance":2200,"performances":{"standard":2200}},{"name":"Vedrickas,
+        Tautvydas","title":"FM","rating":2308,"fideId":12802654,"team":"Vilnius MRU-ROSK
+        Consulting","fed":"LTU","played":4,"score":1,"ratingDiff":-8,"ratingsMap":{"standard":2308},"ratingDiffs":{"standard":-8},"performance":2152,"performances":{"standard":2152}},{"name":"Sakalauskas,
+        Vaidas","title":"IM","rating":2317,"fideId":12800457,"team":"Vilnius MRU-ROSK
+        Consulting","fed":"LTU","played":4,"score":1.5,"ratingDiff":-7,"ratingsMap":{"standard":2317},"ratingDiffs":{"standard":-7},"performance":2189,"performances":{"standard":2189}},{"name":"Setkauskas,
+        Vaidas","rating":2272,"fideId":12803936,"team":"Vilnius MRU-ROSK Consulting","fed":"LTU","played":4,"score":2,"ratingDiff":-2,"ratingsMap":{"standard":2272},"ratingDiffs":{"standard":-2},"performance":2258,"performances":{"standard":2258}},{"name":"Ten
+        Hertog, Hugo","title":"GM","rating":2532,"fideId":1026356,"team":"Paul Keres
+        #1","fed":"NED","played":2,"score":0,"ratingDiff":-8,"ratingsMap":{"standard":2532},"ratingDiffs":{"standard":-8},"performance":1793,"performances":{"standard":1793}},{"name":"Ootes,
+        Lars","title":"IM","rating":2357,"fideId":1019708,"team":"Paul Keres #1","fed":"NED","played":2,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2357},"ratingDiffs":{"standard":-5},"performance":1738,"performances":{"standard":1738}},{"name":"Kerigan,
+        Demre","title":"IM","rating":2358,"fideId":6307841,"team":"Paul Keres #1","fed":"TUR","played":2,"score":0.5,"ratingDiff":-2,"ratingsMap":{"standard":2358},"ratingDiffs":{"standard":-2},"performance":2285,"performances":{"standard":2285}},{"name":"Ondersteijn,
+        Niels","title":"IM","rating":2368,"fideId":1011162,"team":"Paul Keres #1","fed":"NED","played":2,"score":1,"ratingDiff":1,"ratingsMap":{"standard":2368},"ratingDiffs":{"standard":1},"performance":2415,"performances":{"standard":2415}},{"name":"Lombaers,
+        Peter","title":"FM","rating":2294,"fideId":1032852,"team":"Paul Keres #1","fed":"NED","played":2,"score":1,"ratingDiff":5,"ratingsMap":{"standard":2294},"ratingDiffs":{"standard":5},"performance":2389,"performances":{"standard":2389}},{"name":"Wemmers,
+        Xander","title":"IM","rating":2316,"fideId":1004182,"team":"Paul Keres #1","fed":"NED","played":2,"score":0.5,"ratingDiff":-5,"ratingsMap":{"standard":2316},"ratingDiffs":{"standard":-5},"performance":2116,"performances":{"standard":2116}},{"name":"Mastrovasilis,
+        Dimitrios","title":"GM","rating":2522,"fideId":4202694,"team":"Kavala","fed":"GRE","played":5,"score":2,"ratingDiff":-5,"ratingsMap":{"standard":2522},"ratingDiffs":{"standard":-5},"performance":2451,"performances":{"standard":2451}},{"name":"Galopoulos,
+        Nikolaos","rating":2425,"fideId":4208951,"team":"Kavala","fed":"GRE","played":5,"score":1.5,"ratingDiff":-4,"ratingsMap":{"standard":2425},"ratingDiffs":{"standard":-4},"performance":2372,"performances":{"standard":2372}},{"name":"Kanakaris,
+        Georgios","title":"IM","rating":2382,"fideId":4209460,"team":"Kavala","fed":"GRE","played":5,"score":1.5,"ratingDiff":-6,"ratingsMap":{"standard":2382},"ratingDiffs":{"standard":-6},"performance":2303,"performances":{"standard":2303}},{"name":"Stefanou,
+        Dimitrios","title":"FM","rating":2334,"fideId":25825011,"team":"Kavala","fed":"GRE","played":5,"score":2.5,"ratingDiff":12,"ratingsMap":{"standard":2334},"ratingDiffs":{"standard":12},"performance":2439,"performances":{"standard":2439}},{"name":"Koutlas,
+        Nikolaos","title":"FM","rating":2302,"fideId":25827138,"team":"Kavala","fed":"GRE","played":5,"score":2,"ratingDiff":3,"ratingsMap":{"standard":2302},"ratingDiffs":{"standard":3},"performance":2338,"performances":{"standard":2338}},{"name":"Ketzetzis,
+        Georgios","title":"FM","rating":2258,"fideId":4215206,"team":"Kavala","fed":"GRE","played":5,"score":3.5,"ratingDiff":27,"ratingsMap":{"standard":2258},"ratingDiffs":{"standard":27},"performance":2471,"performances":{"standard":2471}},{"name":"Johansson,
+        Linus","title":"IM","rating":2408,"fideId":1711113,"team":"Limhamns SK","fed":"SWE","played":4,"score":2,"ratingDiff":6,"ratingsMap":{"standard":2408},"ratingDiffs":{"standard":6},"performance":2513,"performances":{"standard":2513}},{"name":"Jepson,
+        Christian","title":"IM","rating":2402,"fideId":1701185,"team":"Limhamns SK","fed":"SWE","played":4,"score":1,"ratingDiff":-6,"ratingsMap":{"standard":2402},"ratingDiffs":{"standard":-6},"performance":2275,"performances":{"standard":2275}},{"name":"Lindgren,
+        Philip","title":"IM","rating":2385,"fideId":1713230,"team":"Limhamns SK","fed":"SWE","played":4,"score":3,"ratingDiff":12,"ratingsMap":{"standard":2385},"ratingDiffs":{"standard":12},"performance":2606,"performances":{"standard":2606}},{"name":"Brynell,
+        Stellan","title":"GM","rating":2378,"fideId":1700219,"team":"Limhamns SK","fed":"SWE","played":4,"score":0.5,"ratingDiff":-15,"ratingsMap":{"standard":2378},"ratingDiffs":{"standard":-15},"performance":2060,"performances":{"standard":2060}},{"name":"Ziegler,
+        Ari","title":"IM","rating":2297,"fideId":1700987,"team":"Limhamns SK","fed":"SWE","played":4,"score":2.5,"ratingDiff":8,"ratingsMap":{"standard":2297},"ratingDiffs":{"standard":8},"performance":2451,"performances":{"standard":2451}},{"name":"Penalver,
+        Osmani","title":"FM","rating":2274,"fideId":1704516,"team":"Limhamns SK","fed":"SWE","played":2,"score":0.5,"ratingDiff":-6,"ratingsMap":{"standard":2274},"ratingDiffs":{"standard":-6},"performance":2149,"performances":{"standard":2149}},{"name":"Kaczmarczyk,
+        Dennis","title":"IM","rating":2473,"fideId":24608297,"team":"SG Winterthur","fed":"GER","played":2,"score":0,"ratingDiff":-9,"ratingsMap":{"standard":2473},"ratingDiffs":{"standard":-9},"performance":1694,"performances":{"standard":1694}},{"name":"Blomqvist,
+        Erik","title":"GM","rating":2478,"fideId":1709437,"team":"SK Rockaden #1 (SWE)","fed":"SWE","played":4,"score":3,"ratingDiff":9,"ratingsMap":{"standard":2478},"ratingDiffs":{"standard":9},"performance":2657,"performances":{"standard":2657}},{"name":"Trost,
+        Edvin","title":"IM","rating":2457,"fideId":1729519,"team":"SK Rockaden #1
+        (SWE)","fed":"SWE","played":4,"score":3,"ratingDiff":8,"ratingsMap":{"standard":2457},"ratingDiffs":{"standard":8},"performance":2613,"performances":{"standard":2613}},{"name":"Kurmann,
+        Oliver","title":"IM","rating":2409,"fideId":1308173,"team":"SG Winterthur","fed":"SUI","played":2,"score":0.5,"ratingDiff":-4,"ratingsMap":{"standard":2409},"ratingDiffs":{"standard":-4},"performance":2265,"performances":{"standard":2265}},{"name":"Gaehwiler,
+        Gabriel","title":"IM","rating":2380,"fideId":1314530,"team":"SG Winterthur","fed":"SUI","played":2,"score":1,"ratingDiff":3,"ratingsMap":{"standard":2380},"ratingDiffs":{"standard":3},"performance":2473,"performances":{"standard":2473}},{"name":"Sorensen,
+        Hampus","title":"IM","rating":2440,"fideId":8703884,"team":"SK Rockaden #1
+        (SWE)","fed":"SWE","played":4,"score":2,"ratingDiff":-4,"ratingsMap":{"standard":2440},"ratingDiffs":{"standard":-4},"performance":2360,"performances":{"standard":2360}},{"name":"Barkhagen,
+        Jonas","title":"IM","rating":2408,"fideId":1700855,"team":"SK Rockaden #1
+        (SWE)","fed":"SWE","played":4,"score":2,"ratingDiff":-9,"ratingsMap":{"standard":2408},"ratingDiffs":{"standard":-9},"performance":2238,"performances":{"standard":2238}},{"name":"Georgescu,
+        Lena","title":"WGM","rating":2259,"fideId":1331973,"team":"SG Winterthur","fed":"SUI","played":3,"score":2.5,"ratingDiff":30,"ratingsMap":{"standard":2259},"ratingDiffs":{"standard":30},"performance":2666,"performances":{"standard":2666}},{"name":"Rappazzo,
+        Johannes","title":"FM","rating":2189,"fideId":1340069,"team":"SG Winterthur","fed":"SUI","played":3,"score":1.5,"ratingDiff":14,"ratingsMap":{"standard":2189},"ratingDiffs":{"standard":14},"performance":2375,"performances":{"standard":2375}},{"name":"Kenneskog,
+        Theodor","title":"FM","rating":2338,"fideId":1715011,"team":"SK Rockaden #1
+        (SWE)","fed":"SWE","played":4,"score":1.5,"ratingDiff":-23,"ratingsMap":{"standard":2338},"ratingDiffs":{"standard":-23},"performance":2123,"performances":{"standard":2123}},{"name":"Bator,
+        Robert","title":"IM","rating":2299,"fideId":1700405,"team":"SK Rockaden #1
+        (SWE)","fed":"SWE","played":4,"score":1.5,"ratingDiff":-15,"ratingsMap":{"standard":2299},"ratingDiffs":{"standard":-15},"performance":1892,"performances":{"standard":1892}},{"name":"Schiendorfer,
+        Emanuel","title":"FM","rating":2365,"fideId":1309889,"team":"SG Winterthur","fed":"SUI","played":3,"score":2.5,"ratingDiff":14,"ratingsMap":{"standard":2365},"ratingDiffs":{"standard":14},"performance":2560,"performances":{"standard":2560}},{"name":"Bellahcene,
+        Bilel","title":"GM","rating":2485,"fideId":696358,"team":"CE Nyon","fed":"ALG","played":5,"score":2.5,"ratingDiff":3,"ratingsMap":{"standard":2485},"ratingDiffs":{"standard":3},"performance":2529,"performances":{"standard":2529}},{"name":"Charnushevich,
+        Aliaksei","title":"GM","rating":2496,"fideId":13500767,"team":"CE Nyon","fed":"FRA","played":5,"score":2.5,"ratingDiff":-5,"ratingsMap":{"standard":2496},"ratingDiffs":{"standard":-5},"performance":2429,"performances":{"standard":2429}},{"name":"Willems,
+        Niels","title":"FM","rating":2373,"fideId":20695586,"team":"CE Nyon","fed":"FRA","played":5,"score":3,"ratingDiff":5,"ratingsMap":{"standard":2373},"ratingDiffs":{"standard":5},"performance":2456,"performances":{"standard":2456}},{"name":"Dudognon,
+        Thibault","title":"IM","rating":2344,"fideId":20675569,"team":"CE Nyon","fed":"FRA","played":5,"score":3.5,"ratingDiff":11,"ratingsMap":{"standard":2344},"ratingDiffs":{"standard":11},"performance":2507,"performances":{"standard":2507}},{"name":"Joie,
+        Sebastien","title":"IM","rating":2369,"fideId":650420,"team":"CE Nyon","fed":"SUI","played":5,"score":3,"ratingDiff":2,"ratingsMap":{"standard":2369},"ratingDiffs":{"standard":2},"performance":2398,"performances":{"standard":2398}},{"name":"Ondozi,
+        Murtez","title":"FM","rating":2316,"fideId":937576,"team":"CE Nyon","fed":"KOS","played":3,"score":1,"ratingDiff":-10,"ratingsMap":{"standard":2316},"ratingDiffs":{"standard":-10},"performance":2050,"performances":{"standard":2050}},{"name":"Sahidi,
+        Samir","title":"IM","rating":2490,"fideId":14936372,"team":"SK K Cero Invest
+        Nitra","fed":"SVK","played":5,"score":3.5,"ratingDiff":10,"ratingsMap":{"standard":2490},"ratingDiffs":{"standard":10},"performance":2633,"performances":{"standard":2633}},{"name":"Annaberdiyev,
+        Meylis","title":"GM","rating":2408,"fideId":14000563,"team":"Konya Yildiz
+        Satranc SK","fed":"TKM","played":2,"score":0,"ratingDiff":-7,"ratingsMap":{"standard":2408},"ratingDiffs":{"standard":-7},"performance":1714,"performances":{"standard":1714}},{"name":"Yurtseven,
+        Melih","title":"IM","rating":2352,"fideId":6312160,"team":"Konya Yildiz Satranc
+        SK","fed":"TUR","played":2,"score":2,"ratingDiff":13,"ratingsMap":{"standard":2352},"ratingDiffs":{"standard":13},"performance":3256,"performances":{"standard":3256}},{"name":"Haring,
+        Filip","title":"IM","rating":2479,"fideId":14933080,"team":"SK K Cero Invest
+        Nitra","fed":"SVK","played":5,"score":3.5,"ratingDiff":6,"ratingsMap":{"standard":2479},"ratingDiffs":{"standard":6},"performance":2558,"performances":{"standard":2558}},{"name":"Stohl,
+        Igor","title":"GM","rating":2394,"fideId":14900025,"team":"SK K Cero Invest
+        Nitra","fed":"SVK","played":5,"score":2.5,"ratingDiff":0,"ratingsMap":{"standard":2394},"ratingDiffs":{"standard":0},"performance":2399,"performances":{"standard":2399}},{"name":"Citak,
+        Selim","title":"FM","rating":2308,"fideId":6301819,"team":"Konya Yildiz Satranc
+        SK","fed":"TUR","played":2,"score":0.5,"ratingDiff":-2,"ratingsMap":{"standard":2308},"ratingDiffs":{"standard":-2},"performance":2205,"performances":{"standard":2205}},{"name":"Guleryuz,
+        Kuzey","title":"CM","rating":2255,"fideId":44500203,"team":"Konya Yildiz Satranc
+        SK","fed":"TUR","played":2,"score":1.5,"ratingDiff":15,"ratingsMap":{"standard":2255},"ratingDiffs":{"standard":15},"performance":2546,"performances":{"standard":2546}},{"name":"Bochnicka,
+        Vladimir","title":"IM","rating":2347,"fideId":14943450,"team":"SK K Cero Invest
+        Nitra","fed":"SVK","played":5,"score":3.5,"ratingDiff":10,"ratingsMap":{"standard":2347},"ratingDiffs":{"standard":10},"performance":2501,"performances":{"standard":2501}},{"name":"Jablonicky,
+        Martin","title":"IM","rating":2330,"fideId":14925621,"team":"SK K Cero Invest
+        Nitra","fed":"SVK","played":5,"score":2.5,"ratingDiff":-2,"ratingsMap":{"standard":2330},"ratingDiffs":{"standard":-2},"performance":2298,"performances":{"standard":2298}},{"name":"Olcum,
+        Ahmet","title":"FM","rating":2221,"fideId":6311393,"team":"Konya Yildiz Satranc
+        SK","fed":"TUR","played":2,"score":0.5,"ratingDiff":-3,"ratingsMap":{"standard":2221},"ratingDiffs":{"standard":-3},"performance":2159,"performances":{"standard":2159}},{"name":"Acarbay,
+        Algi","title":"WCM","rating":1992,"fideId":6303692,"team":"Konya Yildiz Satranc
+        SK","fed":"TUR","played":2,"score":0.5,"ratingDiff":5,"ratingsMap":{"standard":1992},"ratingDiffs":{"standard":5},"performance":2115,"performances":{"standard":2115}},{"name":"Chovan,
+        Milan","title":"FM","rating":2304,"fideId":14933691,"team":"SK K Cero Invest
+        Nitra","fed":"SVK","played":5,"score":3,"ratingDiff":-3,"ratingsMap":{"standard":2304},"ratingDiffs":{"standard":-3},"performance":2267,"performances":{"standard":2267}},{"name":"Smirin,
+        Ilia","title":"GM","rating":2554,"fideId":2801990,"team":"Perfect","fed":"ISR","played":4,"score":2.5,"ratingDiff":-2,"ratingsMap":{"standard":2554},"ratingDiffs":{"standard":-2},"performance":2517,"performances":{"standard":2517}},{"name":"Ragnarsson,
+        Dagur","title":"IM","rating":2385,"fideId":2304058,"team":"Fjolnir","fed":"ISL","played":1,"score":0.5,"ratingDiff":2,"ratingsMap":{"standard":2385},"ratingDiffs":{"standard":2},"performance":2554,"performances":{"standard":2554}},{"name":"Thorfinnsson,
+        Bjorn","title":"IM","rating":2329,"fideId":2300982,"team":"Fjolnir","fed":"ISL","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2329},"ratingDiffs":{"standard":-3},"performance":1644,"performances":{"standard":1644}},{"name":"Hamitevici,
+        Vladimir","title":"GM","rating":2444,"fideId":13902393,"team":"Perfect","fed":"MDA","played":5,"score":3,"ratingDiff":-1,"ratingsMap":{"standard":2444},"ratingDiffs":{"standard":-1},"performance":2428,"performances":{"standard":2428}},{"name":"Atlas,
+        Valery","title":"IM","rating":2407,"fideId":12000035,"team":"Perfect","fed":"AUT","played":4,"score":1.5,"ratingDiff":-9,"ratingsMap":{"standard":2407},"ratingDiffs":{"standard":-9},"performance":2237,"performances":{"standard":2237}},{"name":"Bjornsson,
+        Sigurbjorn","title":"FM","rating":2282,"fideId":2300974,"team":"Fjolnir","fed":"ISL","played":1,"score":0.5,"ratingDiff":2,"ratingsMap":{"standard":2282},"ratingDiffs":{"standard":2},"performance":2407,"performances":{"standard":2407}},{"name":"Johannesson,
+        Oliver","title":"FM","rating":2264,"fideId":2305623,"team":"Fjolnir","fed":"ISL","played":1,"score":0.5,"ratingDiff":3,"ratingsMap":{"standard":2264},"ratingDiffs":{"standard":3},"performance":2369,"performances":{"standard":2369}},{"name":"Korsunsky,
+        Yuri","title":"IM","rating":2369,"fideId":14102722,"team":"Perfect","fed":"UKR","played":4,"score":1.5,"ratingDiff":-10,"ratingsMap":{"standard":2369},"ratingDiffs":{"standard":-10},"performance":2190,"performances":{"standard":2190}},{"name":"Kurochkin,
+        Victor","rating":2370,"fideId":4105168,"team":"Perfect","fed":"FID","played":4,"score":1.5,"ratingDiff":-11,"ratingsMap":{"standard":2370},"ratingDiffs":{"standard":-11},"performance":2173,"performances":{"standard":2173}},{"name":"Birkisson,
+        Bjorn Holm","title":"CM","rating":2188,"fideId":2310600,"team":"Fjolnir","fed":"ISL","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2188},"ratingDiffs":{"standard":-5},"performance":1570,"performances":{"standard":1570}},{"name":"Hardarson,
+        Jon Trausti","rating":2076,"fideId":2302594,"team":"Fjolnir","fed":"ISL","played":1,"score":0.5,"ratingDiff":-1,"ratingsMap":{"standard":2076},"ratingDiffs":{"standard":-1},"performance":2033,"performances":{"standard":2033}},{"name":"Pleshkov,
+        Mikhail","rating":2033,"fideId":34106917,"team":"Perfect","fed":"FID","played":5,"score":2.5,"ratingDiff":14,"ratingsMap":{"standard":2033},"ratingDiffs":{"standard":14},"performance":2143,"performances":{"standard":2143}},{"name":"Fedoseev,
+        Vladimir","title":"GM","rating":2720,"fideId":24130737,"team":"Tuxera Aquaprofit
+        Nagykanizsai Sakk Klub","fed":"SLO","played":4,"score":2.5,"ratingDiff":1,"ratingsMap":{"standard":2720},"ratingDiffs":{"standard":1},"performance":2740,"performances":{"standard":2740}},{"name":"Solakoglu,
+        Ozgur","title":"FM","rating":1949,"fideId":6300510,"team":"Turkish Airlines
+        sports club","fed":"TUR","played":2,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":1949},"ratingDiffs":{"standard":-3},"performance":1612,"performances":{"standard":1612}},{"name":"Slavin,
+        Gennadie","rating":2207,"fideId":4104870,"team":"Perfect","fed":"USA","played":3,"score":1,"ratingDiff":-9,"ratingsMap":{"standard":2207},"ratingDiffs":{"standard":-9},"performance":2091,"performances":{"standard":2091}},{"name":"Carlsson,
+        Daniel","rating":2299,"fideId":1703021,"team":"Limhamns SK","fed":"SWE","played":2,"score":0,"ratingDiff":-28,"ratingsMap":{"standard":2299},"ratingDiffs":{"standard":-28},"performance":1340,"performances":{"standard":1340}},{"name":"Sparwel,
+        Oliver","rating":1997,"fideId":4002660,"team":"De Sprenger Echternach","fed":"LUX","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":1997},"ratingDiffs":{"standard":-2},"performance":1590,"performances":{"standard":1590}},{"name":"Tashkinova,
+        Sofiia","title":"WFM","rating":2036,"fideId":14188309,"team":"Rishon Le Zion
+        #2","fed":"ISR","played":2,"score":1,"ratingDiff":13,"ratingsMap":{"standard":2036},"ratingDiffs":{"standard":13},"performance":2290,"performances":{"standard":2290}},{"name":"Pijpers,
+        Arthur","title":"GM","rating":2487,"fideId":1019554,"team":"LSG Leiden","fed":"NED","played":3,"score":1.5,"ratingDiff":-2,"ratingsMap":{"standard":2487},"ratingDiffs":{"standard":-2},"performance":2435,"performances":{"standard":2435}},{"name":"De
+        Schampheleire, Glen","title":"IM","rating":2358,"fideId":208701,"team":"KBSK
+        Brugge","fed":"BEL","played":1,"score":0.5,"ratingDiff":2,"ratingsMap":{"standard":2358},"ratingDiffs":{"standard":2},"performance":2490,"performances":{"standard":2490}},{"name":"Vantorre,
+        Nils","rating":2221,"fideId":258474,"team":"KBSK Brugge","fed":"BEL","played":1,"score":0,"ratingDiff":-7,"ratingsMap":{"standard":2221},"ratingDiffs":{"standard":-7},"performance":1679,"performances":{"standard":1679}},{"name":"Cardon,
+        Helmut","title":"IM","rating":2307,"fideId":1000365,"team":"KBSK Brugge","fed":"NED","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2307},"ratingDiffs":{"standard":-4},"performance":1594,"performances":{"standard":1594}},{"name":"Decoster,
+        Frederic","title":"FM","rating":2288,"fideId":204269,"team":"KBSK Brugge","fed":"BEL","played":1,"score":0,"ratingDiff":-8,"ratingsMap":{"standard":2288},"ratingDiffs":{"standard":-8},"performance":1547,"performances":{"standard":1547}},{"name":"Piceu,
+        Tom","title":"IM","rating":2285,"fideId":201952,"team":"KBSK Brugge","fed":"BEL","played":1,"score":0.5,"ratingDiff":1,"ratingsMap":{"standard":2285},"ratingDiffs":{"standard":1},"performance":2330,"performances":{"standard":2330}},{"name":"Versyck,
+        Dominique","rating":2071,"fideId":244333,"team":"KBSK Brugge","fed":"BEL","played":1,"score":0.5,"ratingDiff":6,"ratingsMap":{"standard":2071},"ratingDiffs":{"standard":6},"performance":2304,"performances":{"standard":2304}},{"name":"Gautier,
+        Selvan","rating":2248,"fideId":26010208,"team":"CE Nyon","fed":"FRA","played":2,"score":1.5,"ratingDiff":18,"ratingsMap":{"standard":2248},"ratingDiffs":{"standard":18},"performance":2610,"performances":{"standard":2610}},{"name":"Coenen,
+        Norbert","title":"IM","rating":2263,"fideId":4619455,"team":"KSK Rochade (BEL)","fed":"GER","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2263},"ratingDiffs":{"standard":-2},"performance":1710,"performances":{"standard":1710}},{"name":"Huesmann,
+        Thomas","title":"FM","rating":2119,"fideId":200441,"team":"KSK Rochade (BEL)","fed":"BEL","played":1,"score":0,"ratingDiff":-2,"ratingsMap":{"standard":2119},"ratingDiffs":{"standard":-2},"performance":1651,"performances":{"standard":1651}},{"name":"Ballmann,
+        Martin","title":"IM","rating":2323,"fideId":1300350,"team":"SG Winterthur","fed":"SUI","played":2,"score":1.5,"ratingDiff":6,"ratingsMap":{"standard":2323},"ratingDiffs":{"standard":6},"performance":2566,"performances":{"standard":2566}},{"name":"Ostlund,
+        Joar","title":"FM","rating":2360,"fideId":1735020,"team":"Wasa SK","fed":"SWE","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2360},"ratingDiffs":{"standard":-5},"performance":1738,"performances":{"standard":1738}},{"name":"Wernberg,
+        Hugo","title":"FM","rating":2263,"fideId":1737511,"team":"Wasa SK","fed":"SWE","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2263},"ratingDiffs":{"standard":-5},"performance":1677,"performances":{"standard":1677}},{"name":"Cramling,
+        Dan","title":"IM","rating":2319,"fideId":1700162,"team":"Wasa SK","fed":"SWE","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":2319},"ratingDiffs":{"standard":-3},"performance":1651,"performances":{"standard":1651}},{"name":"Wedberg,
+        Tom","title":"GM","rating":2340,"fideId":1700073,"team":"Wasa SK","fed":"SWE","played":1,"score":1,"ratingDiff":6,"ratingsMap":{"standard":2340},"ratingDiffs":{"standard":6},"performance":3222,"performances":{"standard":3222}},{"name":"Astrom,
+        Goran","title":"FM","rating":2170,"fideId":1700847,"team":"Wasa SK","fed":"SWE","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2170},"ratingDiffs":{"standard":-5},"performance":1543,"performances":{"standard":1543}},{"name":"Wenzel,
+        Birger","title":"CM","rating":2034,"fideId":4657497,"team":"Wasa SK","fed":"GER","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2034},"ratingDiffs":{"standard":-5},"performance":1406,"performances":{"standard":1406}},{"name":"Khalafova,
+        Narmin","title":"WGM","rating":2244,"fideId":13402625,"team":"CE Gambit Bonnevoie
+        #1","fed":"AZE","played":2,"score":0,"ratingDiff":-9,"ratingsMap":{"standard":2244},"ratingDiffs":{"standard":-9},"performance":1647,"performances":{"standard":1647}},{"name":"Mindru,
+        Valeriu","rating":1865,"fideId":13905775,"team":"Perfect","fed":"MDA","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":1865},"ratingDiffs":{"standard":-4},"performance":1318,"performances":{"standard":1318}},{"name":"Cherniaiev,
+        Tykhon","title":"FM","rating":2327,"fideId":14182360,"team":"Differdange","fed":"UKR","played":1,"score":0.5,"ratingDiff":5,"ratingsMap":{"standard":2327},"ratingDiffs":{"standard":5},"performance":2522,"performances":{"standard":2522}},{"name":"Wirig,
+        Anthony","title":"GM","rating":2431,"fideId":615013,"team":"Differdange","fed":"FRA","played":1,"score":0.5,"ratingDiff":0,"ratingsMap":{"standard":2431},"ratingDiffs":{"standard":0},"performance":2425,"performances":{"standard":2425}},{"name":"Micottis,
+        Dorian","title":"FM","rating":2232,"fideId":26021986,"team":"Differdange","fed":"FRA","played":1,"score":0.5,"ratingDiff":4,"ratingsMap":{"standard":2232},"ratingDiffs":{"standard":4},"performance":2382,"performances":{"standard":2382}},{"name":"Aliferenko,
+        Aleksei","rating":2200,"fideId":14111977,"team":"Differdange","fed":"UKR","played":1,"score":0,"ratingDiff":-6,"ratingsMap":{"standard":2200},"ratingDiffs":{"standard":-6},"performance":1534,"performances":{"standard":1534}},{"name":"Bourg,
+        Nicolas","title":"CM","rating":2140,"fideId":4006160,"team":"Differdange","fed":"LUX","played":1,"score":1,"ratingDiff":28,"ratingsMap":{"standard":2140},"ratingDiffs":{"standard":28},"performance":3102,"performances":{"standard":3102}},{"name":"Barthel,
+        Ansgar","rating":2055,"fideId":4643461,"team":"Differdange","fed":"GER","played":1,"score":0,"ratingDiff":-5,"ratingsMap":{"standard":2055},"ratingDiffs":{"standard":-5},"performance":1458,"performances":{"standard":1458}},{"name":"Hector,
+        Jonny","title":"GM","rating":2431,"fideId":1700090,"team":"Skakklubben Nordkalotten","fed":"SWE","played":1,"score":0,"ratingDiff":-4,"ratingsMap":{"standard":2431},"ratingDiffs":{"standard":-4},"performance":1704,"performances":{"standard":1704}},{"name":"Papadopoulos,
+        Antonios P","rating":1510,"fideId":42153700,"team":"Ippotis Rhodes chess club","fed":"GRE","played":1,"score":0,"ratingDiff":-3,"ratingsMap":{"standard":1510},"ratingDiffs":{"standard":-3},"performance":1499,"performances":{"standard":1499}},{"name":"Szakolczai,
+        Peter","title":"FM","rating":2125,"fideId":705624,"team":"SG Winterthur","fed":"SUI","played":1,"score":1,"ratingDiff":9,"ratingsMap":{"standard":2125},"ratingDiffs":{"standard":9},"performance":2885,"performances":{"standard":2885}}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 24 Feb 2026 17:38:07 GMT
+      Permissions-Policy:
+      - screen-wake-lock=(self "https://lichess1.org"), microphone=(self), fullscreen=(self)
+      - interest-cohort=()
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Frame-Options:
+      - DENY
+      content-length:
+      - '105776'
+    status:
+      code: 200
+      message: OK
+version: 1
