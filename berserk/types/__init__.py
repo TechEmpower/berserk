@@ -21,7 +21,7 @@ from .external_engine import ExternalEngine
 from .challenges import ChallengeJson
 from .common import ClockConfig, LightUser, OnlineLightUser, VariantKey
 from .fide import FidePlayer
-from .puzzles import PuzzleData, PuzzleRace
+from .puzzles import PuzzleBatchResponse, PuzzleData, PuzzleRace
 from .opening_explorer import (
     OpeningExplorerRating,
     OpeningStatistic,
@@ -55,6 +55,7 @@ __all__ = [
     "Perf",
     "Preferences",
     "Profile",
+    "PuzzleBatchResponse",
     "PuzzleData",
     "PuzzleRace",
     "Speed",
