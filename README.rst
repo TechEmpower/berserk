@@ -170,6 +170,7 @@ Most of the API is available:
 
     client.messaging.send
 
+    client.oauth.exchange_code
     client.oauth.test_tokens
 
     client.puzzles.get_daily
