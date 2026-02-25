@@ -5,7 +5,13 @@ from typing import Iterator, Any, Dict, List, cast
 from .. import models
 from ..formats import NDJSON, NDJSON_LIST, PGN, TEXT
 from .base import FmtClient
-from ..types import ArenaResult, CurrentTournaments, SwissInfo, SwissResult
+from ..types import (
+    ArenaResult,
+    ArenaTournamentPlayed,
+    CurrentTournaments,
+    SwissInfo,
+    SwissResult,
+)
 from ..types.tournaments import TeamBattleResult
 
 
@@ -58,6 +64,29 @@ class Tournaments(FmtClient):
             "pairMeAsap": should_pair_immediately,
         }
         self._r.post(path=path, params=params, converter=models.Tournament.convert)
+
+    def get_played(
+        self,
+        username: str,
+        nb: int | None = None,
+        performance: bool | None = None,
+    ) -> List[ArenaTournamentPlayed]:
+        """Get tournaments played by a user.
+
+        Tournaments are sorted by reverse chronological order of start date
+        (last played first). Response is throttled depending on authentication.
+
+        :param username: the user whose played tournaments to fetch
+        :param nb: max number of tournaments to fetch
+        :param performance: include the player performance rating in the response
+        :return: list of tournament entries with player stats
+        """
+        path = f"/api/user/{username}/tournament/played"
+        params = {"nb": nb, "performance": performance}
+        return cast(
+            List[ArenaTournamentPlayed],
+            self._r.get(path, params=params, fmt=NDJSON_LIST),
+        )
 
     def get_team_standings(self, tournament_id: str) -> TeamBattleResult:
         """Get team standing of a team battle tournament, with their respective top players.

@@ -215,6 +215,7 @@ Most of the API is available:
     client.tournaments.get
     client.tournaments.get_tournament
     client.tournaments.get_swiss
+    client.tournaments.get_played
     client.tournaments.get_team_standings
     client.tournaments.update_team_battle
     client.tournaments.create_arena

@@ -29,12 +29,21 @@ from .opening_explorer import (
 )
 from .studies import ChapterIdName
 from .team import PaginatedTeams, Team
-from .tournaments import ArenaResult, CurrentTournaments, SwissResult, SwissInfo
+from .tournaments import (
+    ArenaResult,
+    ArenaTournamentPlayed,
+    ArenaTournamentPlayer,
+    CurrentTournaments,
+    SwissInfo,
+    SwissResult,
+)
 from .tv import TVFeed
 
 __all__ = [
     "AccountInformation",
     "ArenaResult",
+    "ArenaTournamentPlayed",
+    "ArenaTournamentPlayer",
     "BroadcastPlayer",
     "BroadcastsByUser",
     "BroadcastTop",
