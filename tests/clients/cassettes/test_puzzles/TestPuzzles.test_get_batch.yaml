@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://lichess.org/api/puzzle/batch/opening?nb=1
+  response:
+    body:
+      string: '{"puzzles":[{"game":{"id":"HTglVXdv","perf":{"key":"rapid","name":"Rapid"},"rated":true,"players":[{"name":"tackiness","flair":"smileys.cowboy-hat-face","patron":true,"patronColor":1,"id":"tackiness","color":"white","rating":1941},{"name":"MedvedTolik","id":"medvedtolik","color":"black","rating":1910}],"pgn":"e4
+        e6 d4 d5 Bd3 Bb4+ c3 dxe4 Bxe4 Nf6 Bf3 Ba5 Bg5 O-O Nd2 h6 Bh4 g5 Bg3 c5 Ne2
+        cxd4 Nxd4 Bb6 N2b3 e5 Bxe5","clock":"15+10"},"puzzle":{"id":"JHm74","rating":1544,"plays":10054,"solution":["f8e8","e1g1","e8e5"],"themes":["pin","short","advantage","opening"],"initialPly":26}}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, Authorization, If-Modified-Since, Cache-Control, Content-Type
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, POST, PUT, DELETE
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 25 Feb 2026 19:35:00 GMT
+      Permissions-Policy:
+      - interest-cohort=()
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - DENY
+      content-length:
+      - '586'
+    status:
+      code: 200
+      message: OK
+version: 1

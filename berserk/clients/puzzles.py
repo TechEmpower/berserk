@@ -5,7 +5,8 @@ from typing import Iterator, Any, Dict, cast
 from .. import models
 from ..formats import NDJSON
 from .base import BaseClient
-from ..types.puzzles import DifficultyLevel, PuzzleData, PuzzleRace
+from ..types.common import Color
+from ..types.puzzles import DifficultyLevel, PuzzleBatchResponse, PuzzleData, PuzzleRace
 
 
 class Puzzles(BaseClient):
@@ -44,6 +45,34 @@ class Puzzles(BaseClient):
         path = "/api/puzzle/next"
         params = {"angle": angle, "difficulty": difficulty}
         return cast(PuzzleData, self._r.get(path, params=params))
+
+    def get_batch(
+        self,
+        angle: str,
+        difficulty: DifficultyLevel | None = None,
+        nb: int | None = None,
+        color: Color | None = None,
+    ) -> PuzzleBatchResponse:
+        """Get multiple puzzles at once by theme/angle.
+
+        If authenticated, only returns puzzles that the user has never seen before.
+        DO NOT use this endpoint to enumerate puzzles for mass download; use the
+        full public puzzle database instead.
+
+        :param angle: the theme or opening (e.g. ``mix``, ``opening``). See Lichess puzzle themes.
+        :param difficulty: desired difficulty relative to user rating, or 1500 if anonymous
+        :param nb: how many puzzles to fetch (1-50). Default 15.
+        :param color: color to play (white/black). Only applies when nb=1.
+        :return: response containing a list of puzzles
+        """
+        path = f"/api/puzzle/batch/{angle}"
+        params = {
+            "difficulty": difficulty,
+            "nb": nb,
+            "color": color,
+        }
+        params = {k: v for k, v in params.items() if v is not None}
+        return cast(PuzzleBatchResponse, self._r.get(path, params=params))
 
     def get_puzzle_activity(
         self, max: int | None = None, before: int | None = None
