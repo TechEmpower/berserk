@@ -99,6 +99,9 @@ class Requestor(Generic[T]):
         if not response.ok:
             raise exceptions.ResponseError(response)
 
+        if response.status_code == 204:
+            return None
+
         return fmt.handle(response, is_stream=stream, converter=converter)
 
     @overload

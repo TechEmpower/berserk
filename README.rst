@@ -192,6 +192,7 @@ Most of the API is available:
     client.studies.export
     client.studies.export_by_username
     client.studies.import_pgn
+    client.studies.update_chapter_tags
 
     client.tablebase.look_up
     client.tablebase.standard
