@@ -4,6 +4,7 @@ Changelog
 To be released
 --------------
 
+* Added ``client.broadcasts.get_team_standings`` to get the team leaderboard of a broadcast.
 
 * Deprecate Python 3.9 support - minimum required version is now Python 3.10+. This does not mean the library will not work with Python 3.9, but it will not be tested against it anymore.
 
@@ -23,6 +24,7 @@ To be released
 
 
 Thanks to all the contributors who helped to this release:
+- Nick Stillman
 - @hsheth2
 - @DoraFgr
 - @MrElyazid
