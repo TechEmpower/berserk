@@ -14,7 +14,6 @@ class OAuth(BaseClient):
         client_id: str,
         redirect_uri: str,
         code_challenge: str,
-        *,
         state: str | None = None,
         scope: str | None = None,
         username: str | None = None,
