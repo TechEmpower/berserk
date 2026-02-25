@@ -1,10 +1,28 @@
 from __future__ import annotations
 
-from typing import List
+from typing import Dict, List
 
 from typing_extensions import NotRequired, TypedDict
 
 from .common import LightUser, Title
+
+
+class BroadcastTournamentPlayer(TypedDict):
+    """Player entry from GET /broadcast/{id}/players."""
+
+    name: str
+    rating: NotRequired[int]
+    title: NotRequired[str]
+    fideId: NotRequired[int]
+    team: NotRequired[str]
+    fed: NotRequired[str]
+    played: NotRequired[int]
+    score: NotRequired[int | float]
+    ratingDiff: NotRequired[int]
+    ratingsMap: NotRequired[Dict[str, int]]
+    ratingDiffs: NotRequired[Dict[str, int]]
+    performance: NotRequired[int]
+    performances: NotRequired[Dict[str, int]]
 
 
 class BroadcastPlayer(TypedDict):
