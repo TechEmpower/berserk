@@ -4,6 +4,7 @@ Changelog
 To be released
 --------------
 
+* Added ``client.oauth.authorization_url`` to build the OAuth2 authorization URL (GET /oauth) for the Authorization Code flow with PKCE.
 
 * Deprecate Python 3.9 support - minimum required version is now Python 3.10+. This does not mean the library will not work with Python 3.9, but it will not be tested against it anymore.
 
