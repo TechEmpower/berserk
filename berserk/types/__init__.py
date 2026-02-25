@@ -29,6 +29,7 @@ from .opening_explorer import (
 )
 from .studies import ChapterIdName
 from .team import PaginatedTeams, Team
+from .oauth import OAuthTokenResponse
 from .tournaments import ArenaResult, CurrentTournaments, SwissResult, SwissInfo
 from .tv import TVFeed
 
@@ -48,6 +49,7 @@ __all__ = [
     "FidePlayer",
     "LightUser",
     "OnlineLightUser",
+    "OAuthTokenResponse",
     "OpeningExplorerRating",
     "OpeningStatistic",
     "PaginatedBroadcasts",
