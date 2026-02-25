@@ -81,3 +81,19 @@ class TeamResult(TypedDict):
 class TeamBattleResult(TypedDict):
     id: str
     teams: List[TeamResult]
+
+
+class ArenaTournamentPlayer(TypedDict):
+    """Player stats for a tournament played by a user (GET /api/user/{username}/tournament/played)."""
+
+    games: int
+    score: int
+    rank: int
+    performance: NotRequired[int]
+
+
+class ArenaTournamentPlayed(TypedDict):
+    """Tournament plus player stats (GET /api/user/{username}/tournament/played)."""
+
+    tournament: Dict[str, Any]
+    player: ArenaTournamentPlayer
