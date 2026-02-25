@@ -184,6 +184,74 @@ class Games(FmtClient):
                 converter=models.Game.convert,
             )
 
+    def export_bookmarks(
+        self,
+        as_pgn: bool | None = None,
+        since: int | None = None,
+        until: int | None = None,
+        max: int | None = None,
+        moves: bool | None = None,
+        pgn_in_json: bool | None = None,
+        tags: bool | None = None,
+        clocks: bool | None = None,
+        evals: bool | None = None,
+        accuracy: bool | None = None,
+        opening: bool | None = None,
+        division: bool | None = None,
+        literate: bool | None = None,
+        last_fen: bool | None = None,
+        sort: str | None = None,
+    ) -> Iterator[str] | Iterator[Dict[str, Any]]:
+        """Export your bookmarked games.
+
+        Requires OAuth2 authorization. Games are sorted by reverse chronological
+        order (most recent first). We recommend streaming the response.
+
+        :param as_pgn: whether to return games in PGN format
+        :param since: download games bookmarked since this timestamp (ms)
+        :param until: download games bookmarked until this timestamp (ms)
+        :param max: maximum number of bookmarked games to download
+        :param moves: whether to include the PGN moves
+        :param pgn_in_json: include the full PGN within JSON response
+        :param tags: whether to include the PGN tags
+        :param clocks: whether to include clock comments in the PGN moves
+        :param evals: whether to include analysis evaluation comments when available
+        :param accuracy: whether to include accuracy percent of each player (JSON only)
+        :param opening: whether to include the opening name
+        :param division: whether to include middlegame/endgame ply boundaries (JSON only)
+        :param literate: whether to include textual annotations in the PGN
+        :param last_fen: whether to include X-FEN of the last position (JSON only)
+        :param sort: sort order (e.g. ``dateAsc``, ``dateDesc``)
+        :return: iterator over the exported games, as JSON or PGN
+        """
+        path = "/api/games/export/bookmarks"
+        params = {
+            "since": since,
+            "until": until,
+            "max": max,
+            "moves": moves,
+            "pgnInJson": pgn_in_json,
+            "tags": tags,
+            "clocks": clocks,
+            "evals": evals,
+            "accuracy": accuracy,
+            "opening": opening,
+            "division": division,
+            "literate": literate,
+            "lastFen": last_fen,
+            "sort": sort,
+        }
+        if self._use_pgn(as_pgn):
+            yield from self._r.get(path, params=params, fmt=PGN, stream=True)
+        else:
+            yield from self._r.get(
+                path,
+                params=params,
+                fmt=NDJSON,
+                stream=True,
+                converter=models.Game.convert,
+            )
+
     def export_multi(
         self,
         *game_ids: str,

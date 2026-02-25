@@ -158,6 +158,7 @@ Most of the API is available:
     client.games.export
     client.games.export_ongoing_by_player
     client.games.export_by_player
+    client.games.export_bookmarks
     client.games.export_multi
     client.games.export_imported
     client.games.get_among_players
