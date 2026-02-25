@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from typing import cast, List, Iterator, Dict, Any
+from typing import Any, Dict, Iterator, List, cast
 
-from ..formats import PGN, NDJSON
+from ..formats import NDJSON, PGN
 from ..types.common import Color, VariantKey
 from ..types import ChapterIdName
 from .base import BaseClient
@@ -132,6 +132,20 @@ class Studies(BaseClient):
         return cast(
             List[ChapterIdName], self._r.post(path, data=payload).get("chapters", [])
         )
+
+    def update_chapter_tags(self, study_id: str, chapter_id: str, pgn: str) -> None:
+        """Update PGN tags of a study chapter.
+
+        Add, update, or delete PGN tags by providing PGN text (only the tag
+        lines are used; moves are ignored). Omitted tags are left unchanged.
+
+        :param study_id: study id (8 characters)
+        :param chapter_id: chapter id (8 characters)
+        :param pgn: PGN text containing the tags to set
+        :return: None (API returns 204 No Content on success)
+        """
+        path = f"/api/study/{study_id}/{chapter_id}/tags"
+        self._r.post(path, data={"pgn": pgn})
 
     def get_by_user(self, username: str) -> Iterator[Dict[str, Any]]:
         """
