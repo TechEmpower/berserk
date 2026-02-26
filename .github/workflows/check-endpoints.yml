@@ -121,3 +121,4 @@ jobs:
             gh issue close "$ISSUE_NUM" --comment "No missing endpoints or params as of this run. This issue will be reopened when the spec gains new endpoints we don't implement."
             echo "Closed issue #$ISSUE_NUM"
           fi
+
