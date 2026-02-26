@@ -1,5 +1,5 @@
 # Spec vs implementation: run check-endpoints.py against the latest Lichess API spec,
-# and create or update a single issue with a checklist of missing endpoints/params.
+# and create or update a single issue with a list of missing endpoints/params.
 # See also: issue #6 (historical umbrella), Jira CHESS-xxx Rolling CI.
 
 # When enabling schedule: uncomment the schedule block below.
@@ -72,7 +72,7 @@ jobs:
               data = json.load(f)
           intro = """This issue is automatically updated by the [check-endpoints](.github/workflows/check-endpoints.yml) workflow. Manual edits to the list below will be overwritten. For historical context and implementation notes, see issue 6.
 
-          *Note: The text above and the checklist below are for testing only (e.g. when this workflow runs on a fork).*
+          *Note: The text above and the list below are for testing only (e.g. when this workflow runs on a fork).*
 
           """
           parts = [intro]
