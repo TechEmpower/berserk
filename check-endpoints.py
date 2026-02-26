@@ -289,7 +289,7 @@ def main() -> None:
         spec_path = Path("../api/doc/specs/lichess-api.yaml")
         if not spec_path.is_file():
             print(
-                "Usage: check-endpoints-NEW.py [--json] <path to lichess-api.yaml>",
+                "Usage: check-endpoints.py [--json] <path to lichess-api.yaml>",
                 file=sys.stderr,
             )
             sys.exit(EXIT_ERROR)
