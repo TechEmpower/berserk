@@ -80,7 +80,7 @@ jobs:
               parts.append("## Missing endpoints (path, operation)\n\n")
               for e in data["missing_endpoints"]:
                   path, op = e["path"], e["operation"]
-                  parts.append(f"- [ ] `{op}` `{path}`\n")
+                  parts.append(f"- `{op}` `{path}`\n")
               parts.append("\n")
           if data.get("missing_params"):
               parts.append("## Missing query params (implemented endpoints)\n\n")
@@ -88,7 +88,7 @@ jobs:
                   path, op = p["path"], p["operation"]
                   params = ", ".join(f"`{x}`" for x in p["params"])
                   method = p.get("method", "")
-                  parts.append(f"- [ ] `{op}` `{path}` — missing: {params} — {method}\n")
+                  parts.append(f"- `{op}` `{path}` — missing: {params} — {method}\n")
           sys.stdout.write("".join(parts))
           PY
           )
