@@ -9,12 +9,15 @@ name: Check endpoints (spec vs implementation)
 
 on:
   workflow_dispatch: {}
-  push:
-    branches: ["check-endpoints-testing"]
-    paths:
-      - ".github/workflows/check-endpoints.yml"
-      - "check-endpoints.py"
-  # Weekly run — uncomment to enable:
+  # push:
+  #   branches: ["check-endpoints-testing"]
+  #   paths:
+  #     - ".github/workflows/check-endpoints.yml"
+  #     - "check-endpoints.py"
+  # Daily run for testing — ~6 PM EST (23:00 UTC). During EDT it runs ~7 PM local.
+  schedule:
+    - cron: "0 23 * * *"
+  # Weekly (e.g. for production): "0 3 * * 1" = Monday 03:00 UTC
   # schedule:
   #   - cron: "0 3 * * 1"
 
@@ -121,4 +124,3 @@ jobs:
             gh issue close "$ISSUE_NUM" --comment "No missing endpoints or params as of this run. This issue will be reopened when the spec gains new endpoints we don't implement."
             echo "Closed issue #$ISSUE_NUM"
           fi
-
