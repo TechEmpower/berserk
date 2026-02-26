@@ -223,9 +223,7 @@ class PathOperationVisitor(ast.NodeVisitor):
                     method_val.value, str
                 ):
                     template = path_template_from_ast_node(path_node, self._scope)
-                    param_keys = param_keys_from_node(
-                        params_node, self._params_scope
-                    )
+                    param_keys = param_keys_from_node(params_node, self._params_scope)
                     self._add(template, method_val.value.lower(), param_keys)
         self.generic_visit(node)
 
@@ -363,8 +361,7 @@ def main() -> None:
     if json_output:
         out = {
             "missing_endpoints": [
-                {"path": p, "operation": op.upper()}
-                for p, op in sorted(missing)
+                {"path": p, "operation": op.upper()} for p, op in sorted(missing)
             ],
             "missing_params": [
                 {
