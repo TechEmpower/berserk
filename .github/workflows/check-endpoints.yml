@@ -45,10 +45,13 @@ jobs:
       - name: Run check-endpoints
         id: check
         run: |
+          set +e
           python check-endpoints.py --json spec/openapi.yaml > output.json 2>stderr.txt
           EXIT=$?
+          set -e
           echo "exit_code=$EXIT" >> "$GITHUB_OUTPUT"
-        continue-on-error: true
+          # Exit 0 so this step is green; exit_code in output drives later steps. Only exit 2 is a real failure.
+          [ "$EXIT" = "2" ] && exit 2 || exit 0
 
       - name: Fail on script error (exit 2)
         if: steps.check.outputs.exit_code == '2'
