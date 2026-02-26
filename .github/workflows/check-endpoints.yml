@@ -14,9 +14,6 @@ on:
   #   paths:
   #     - ".github/workflows/check-endpoints.yml"
   #     - "check-endpoints.py"
-  # Daily run for testing — ~6 PM EST (23:00 UTC). During EDT it runs ~7 PM local.
-  schedule:
-    - cron: "0 23 * * *"
   # Weekly (e.g. for production): "0 3 * * 1" = Monday 03:00 UTC
   # schedule:
   #   - cron: "0 3 * * 1"
