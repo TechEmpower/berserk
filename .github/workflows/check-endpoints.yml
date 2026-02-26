@@ -9,6 +9,11 @@ name: Check endpoints (spec vs implementation)
 
 on:
   workflow_dispatch: {}
+  push:
+    branches: ["check-endpoints-testing"]
+    paths:
+      - ".github/workflows/check-endpoints.yml"
+      - "check-endpoints.py"
   # Weekly run — uncomment to enable:
   # schedule:
   #   - cron: "0 3 * * 1"
