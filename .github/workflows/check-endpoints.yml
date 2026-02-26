@@ -94,19 +94,19 @@ jobs:
           )
           echo "$BODY" > body.md
           # Find open issue with our title
-          ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints (auto-updated)"' 2>/dev/null || true)
+          ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
           if [ -n "$ISSUE_NUM" ]; then
             gh issue edit "$ISSUE_NUM" --body-file body.md
             echo "Updated issue #$ISSUE_NUM"
           else
             # Reopen if closed: find any issue with that title
-            OLD_NUM=$(gh issue list --repo "${{ github.repository }}" --state all --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints (auto-updated)"' 2>/dev/null || true)
+            OLD_NUM=$(gh issue list --repo "${{ github.repository }}" --state all --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
             if [ -n "$OLD_NUM" ]; then
               gh issue reopen "$OLD_NUM"
               gh issue edit "$OLD_NUM" --body-file body.md
               echo "Reopened and updated issue #$OLD_NUM"
             else
-              gh issue create --title "Spec vs implementation: missing endpoints (auto-updated)" --body-file body.md
+              gh issue create --title "Spec vs implementation: missing endpoints or params (auto-updated)" --body-file body.md
               echo "Created new issue"
             fi
           fi
@@ -116,7 +116,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints (auto-updated)"' 2>/dev/null || true)
+          ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
           if [ -n "$ISSUE_NUM" ]; then
             gh issue close "$ISSUE_NUM" --comment "No missing endpoints or params as of this run. This issue will be reopened when the spec gains new endpoints we don't implement."
             echo "Closed issue #$ISSUE_NUM"
