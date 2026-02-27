@@ -12,6 +12,11 @@ on:
   # Weekly (e.g. for production): "0 3 * * 1" = Monday 03:00 UTC
   schedule:
     - cron: "0 3 * * 1"
+  push:
+    branches: ["feature/check-endpoints-ci"]
+    paths:
+      - ".github/workflows/check-endpoints.yml"
+      - "check-endpoints.py"
 
 jobs:
   check-endpoints:
