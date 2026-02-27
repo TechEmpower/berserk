@@ -2,6 +2,7 @@
 # with param "a"; spec adds "b" so script reports one missing_params entry.
 # Script only parses AST; this file is never imported.
 
+
 class FixtureClient:
     def get_fixture(self, a):
         path = "/api/dev-tests/fixture"

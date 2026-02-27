@@ -105,7 +105,9 @@ class TestFalsePositives:
         assert "/antichess" in check_endpoints.FALSE_POSITIVES
 
 
-def _run_script(*args: str, cwd: Path | None = None) -> subprocess.CompletedProcess[str]:
+def _run_script(
+    *args: str, cwd: Path | None = None
+) -> subprocess.CompletedProcess[str]:
     """Run check-endpoints.py; cwd defaults to repo root."""
     cmd = [sys.executable, str(_ROOT / "check-endpoints.py"), *args]
     return subprocess.run(
