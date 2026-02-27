@@ -6,6 +6,8 @@ Run manually: uv run pytest dev_tests/test_check_endpoints.py -v
 from __future__ import annotations
 
 import importlib.util
+import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -28,8 +30,13 @@ class TestNormalizePathTemplate:
         assert check_endpoints.normalize_path_template("/api/games/") == "/api/games"
 
     def test_placeholder_collapsed(self):
-        assert check_endpoints.normalize_path_template("/api/game/{id}") == "/api/game/{}"
-        assert check_endpoints.normalize_path_template("/api/{gameId}/claim") == "/api/{}/claim"
+        assert (
+            check_endpoints.normalize_path_template("/api/game/{id}") == "/api/game/{}"
+        )
+        assert (
+            check_endpoints.normalize_path_template("/api/{gameId}/claim")
+            == "/api/{}/claim"
+        )
 
     def test_query_stripped(self):
         assert check_endpoints.normalize_path_template("/api?page=1") == "/api"
@@ -96,3 +103,89 @@ class TestFalsePositives:
         assert "/standard" in check_endpoints.FALSE_POSITIVES
         assert "/atomic" in check_endpoints.FALSE_POSITIVES
         assert "/antichess" in check_endpoints.FALSE_POSITIVES
+
+
+def _run_script(*args: str, cwd: Path | None = None) -> subprocess.CompletedProcess[str]:
+    """Run check-endpoints.py; cwd defaults to repo root."""
+    cmd = [sys.executable, str(_ROOT / "check-endpoints.py"), *args]
+    return subprocess.run(
+        cmd,
+        cwd=cwd or _ROOT,
+        capture_output=True,
+        text=True,
+    )
+
+
+_FIXTURES = _ROOT / "dev_tests" / "fixtures"
+_FAKE_CLIENTS = _FIXTURES / "fake_clients"
+
+
+class TestExitCode:
+    """Script exit code: 0 on success, non-zero on error."""
+
+    def test_no_args_exits_non_zero(self):
+        result = _run_script()
+        assert result.returncode != 0
+        assert "Usage" in result.stderr or "Spec file not found" in result.stderr
+
+    def test_nonexistent_spec_exits_non_zero(self):
+        result = _run_script("nonexistent.yaml")
+        assert result.returncode != 0
+        assert "not found" in result.stderr or "Spec file" in result.stderr
+
+    def test_valid_spec_exits_zero(self):
+        spec_path = _ROOT / "dev_tests" / "fixtures" / "minimal_spec.yaml"
+        result = _run_script("--json", str(spec_path))
+        assert result.returncode == 0, result.stderr
+
+
+class TestJsonOutput:
+    """With --json, stdout is valid JSON with expected keys and types."""
+
+    def test_json_has_required_keys(self):
+        spec_path = _ROOT / "dev_tests" / "fixtures" / "minimal_spec.yaml"
+        result = _run_script("--json", str(spec_path))
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert "missing_endpoints" in data
+        assert "missing_params" in data
+
+    def test_missing_endpoints_and_params_are_lists(self):
+        spec_path = _ROOT / "dev_tests" / "fixtures" / "minimal_spec.yaml"
+        result = _run_script("--json", str(spec_path))
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert isinstance(data["missing_endpoints"], list)
+        assert isinstance(data["missing_params"], list)
+
+    def test_missing_endpoint_item_has_path_and_operation(self):
+        """When there are missing endpoints, each item has path and operation."""
+        spec_path = _ROOT / "dev_tests" / "fixtures" / "minimal_spec.yaml"
+        result = _run_script("--json", str(spec_path))
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        # Minimal spec has /api/minimal-test get which we don't implement
+        assert len(data["missing_endpoints"]) >= 1
+        item = data["missing_endpoints"][0]
+        assert "path" in item
+        assert "operation" in item
+
+    def test_missing_params_item_has_path_operation_params_and_method(self):
+        """Fixture client implements one param; spec adds another → one missing_params entry with correct shape."""
+        spec_path = _FIXTURES / "spec_with_extra_param.yaml"
+        result = _run_script(
+            "--json",
+            "--clients-dir",
+            str(_FAKE_CLIENTS),
+            str(spec_path),
+        )
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert len(data["missing_params"]) == 1, data
+        item = data["missing_params"][0]
+        assert item["path"] == "/api/dev-tests/fixture"
+        assert item["operation"] == "GET"
+        assert "params" in item
+        assert "method" in item
+        assert isinstance(item["params"], list)
+        assert item["params"] == ["b"]

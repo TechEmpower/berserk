@@ -284,11 +284,20 @@ def main() -> None:
     json_output = "--json" in argv
     args = [a for a in argv if a != "--json"]
 
+    clients_dir = Path("berserk/clients")
+    if "--clients-dir" in args:
+        idx = args.index("--clients-dir")
+        if idx + 1 >= len(args):
+            print("Usage: --clients-dir requires a path", file=sys.stderr)
+            sys.exit(EXIT_ERROR)
+        clients_dir = Path(args[idx + 1])
+        args = [a for i, a in enumerate(args) if i != idx and i != idx + 1]
+
     if len(args) != 1:
         spec_path = Path("../api/doc/specs/lichess-api.yaml")
         if not spec_path.is_file():
             print(
-                "Usage: check-endpoints.py [--json] <path to lichess-api.yaml>",
+                "Usage: check-endpoints.py [--json] [--clients-dir DIR] <path to lichess-api.yaml>",
                 file=sys.stderr,
             )
             sys.exit(EXIT_ERROR)
@@ -305,9 +314,8 @@ def main() -> None:
         print(f"Error reading spec: {e}", file=sys.stderr)
         sys.exit(EXIT_ERROR)
 
-    clients_dir = Path("berserk/clients")
     if not clients_dir.is_dir():
-        print("Run from repo root (berserk/clients must exist).", file=sys.stderr)
+        print(f"Clients dir not found: {clients_dir}", file=sys.stderr)
         sys.exit(EXIT_ERROR)
 
     implemented, implemented_params, implemented_method_info = (
