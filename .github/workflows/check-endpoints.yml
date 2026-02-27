@@ -44,7 +44,6 @@ jobs:
 
       - name: Run check-endpoints
         run: |
-          python check-endpoints.py spec/openapi.yaml
           python check-endpoints.py --json spec/openapi.yaml > output.json 2>stderr.txt || { cat stderr.txt; exit 1; }
 
       - name: Update issue from check result
@@ -87,6 +86,9 @@ jobs:
           sys.stdout.write("".join(parts))
           PY
           )
+            echo "----- check-endpoints issue body -----"
+            printf '%s\n' "$BODY"
+            echo "--------------------------------------"
             echo "$BODY" > body.md
             ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
             if [ -n "$ISSUE_NUM" ]; then
