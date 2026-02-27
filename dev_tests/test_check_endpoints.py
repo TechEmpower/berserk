@@ -140,6 +140,12 @@ class TestExitCode:
         result = _run_script("--json", str(spec_path))
         assert result.returncode == 0, result.stderr
 
+    def test_clients_dir_nonexistent_exits_non_zero(self):
+        spec_path = _FIXTURES / "minimal_spec.yaml"
+        result = _run_script("--json", "--clients-dir", "/nonexistent", str(spec_path))
+        assert result.returncode != 0
+        assert "not found" in result.stderr or "Clients dir" in result.stderr
+
 
 class TestJsonOutput:
     """With --json, stdout is valid JSON with expected keys and types."""
@@ -191,3 +197,51 @@ class TestJsonOutput:
         assert "method" in item
         assert isinstance(item["params"], list)
         assert item["params"] == ["b"]
+
+    def test_missing_endpoint_reported_when_not_implemented(self):
+        """Fixture implements one path; spec has two. Unimplemented path appears in missing_endpoints."""
+        spec_path = _FIXTURES / "spec_one_missing_endpoint.yaml"
+        result = _run_script(
+            "--json",
+            "--clients-dir",
+            str(_FAKE_CLIENTS),
+            str(spec_path),
+        )
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert len(data["missing_endpoints"]) == 1, data
+        assert data["missing_endpoints"][0]["path"] == "/api/dev-tests/other"
+        assert data["missing_endpoints"][0]["operation"] == "GET"
+
+    def test_no_missing_when_spec_and_client_match(self):
+        """Fixture and spec match exactly → empty missing_endpoints and missing_params."""
+        spec_path = _FIXTURES / "spec_exact_match.yaml"
+        result = _run_script(
+            "--json",
+            "--clients-dir",
+            str(_FAKE_CLIENTS),
+            str(spec_path),
+        )
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert data["missing_endpoints"] == [], data
+        assert data["missing_params"] == [], data
+
+    def test_false_positive_not_reported_as_missing(self):
+        """Spec with only /oauth (in FALSE_POSITIVES) → missing_endpoints is empty."""
+        spec_path = _FIXTURES / "spec_false_positive_only.yaml"
+        result = _run_script("--json", str(spec_path))
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert data["missing_endpoints"] == [], data
+
+
+class TestHumanOutput:
+    """Without --json, human-readable output."""
+
+    def test_nothing_missing_printed_when_all_match(self):
+        """Exact match → stdout contains 'Nothing missing'."""
+        spec_path = _FIXTURES / "spec_exact_match.yaml"
+        result = _run_script("--clients-dir", str(_FAKE_CLIENTS), str(spec_path))
+        result.check_returncode()
+        assert "Nothing missing" in result.stdout
