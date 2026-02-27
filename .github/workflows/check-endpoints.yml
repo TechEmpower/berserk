@@ -39,6 +39,7 @@ jobs:
 
       - name: Run check-endpoints
         run: |
+          python check-endpoints.py spec/openapi.yaml
           python check-endpoints.py --json spec/openapi.yaml > output.json 2>stderr.txt || { cat stderr.txt; exit 1; }
 
       - name: Update issue from check result
