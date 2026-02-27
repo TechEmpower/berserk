@@ -1,6 +1,6 @@
 # Spec vs implementation: run check-endpoints.py against the latest Lichess API spec,
 # and create or update a single issue with a list of missing endpoints/params.
-# See also: issue #6 (historical umbrella), Jira CHESS-xxx Rolling CI.
+# See also: issue #6 (historical umbrella).
 
 # When enabling schedule: uncomment the schedule block below.
 # Duration: weekly. Cron "0 3 * * 1" = Monday 03:00 UTC (avoids overlap with 02:00 cassette refresh if present).
