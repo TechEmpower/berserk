@@ -6,9 +6,10 @@ calls so we match (path, operation) accurately, including when path is passed
 as a variable or as a literal/f-string. For implemented endpoints, also checks
 that query params passed to the request match the spec.
 
-Exit codes: 0 = no missing endpoints or params; 1 = has missing (for CI/alerting);
-2 = error (bad args, spec file not found, etc.). With --json, only JSON is printed
-to stdout for machine consumption; errors always go to stderr.
+Exit codes: 0 = success (run completed; check JSON or human output for missing/not);
+non-zero = error (bad args, spec not found, exception). With --json, only JSON is
+printed to stdout for CI; empty missing_endpoints and missing_params means nothing missing.
+Errors always go to stderr.
 """
 
 from __future__ import annotations
@@ -17,14 +18,12 @@ import ast
 import json
 import re
 import sys
+import traceback
 from pathlib import Path
 
 import yaml
 
-# Exit codes: 0 = no missing, 1 = has missing (endpoints or params), 2 = error (usage/file)
-EXIT_OK = 0
-EXIT_HAS_MISSING = 1
-EXIT_ERROR = 2
+EXIT_ERROR = 1
 
 # Paths that appear in spec but are implemented dynamically (e.g. tablebase /{variant})
 FALSE_POSITIVES = {"/standard", "/atomic", "/antichess", "/oauth"}
@@ -377,23 +376,28 @@ def main() -> None:
         }
         print(json.dumps(out, indent=2))
     else:
-        if missing:
-            print("\nMissing (path, operation):\n")
-            for path, op in sorted(missing):
-                print(f"  {path}  {op.upper()}")
+        if not has_missing:
+            print("Nothing missing")
         else:
-            print("No missing endpoints")
-        if missing_params_list:
-            print("\nMissing query params (implemented endpoints):\n")
-            for path, op, params, method_str in sorted(
-                missing_params_list, key=lambda x: (x[0], x[1])
-            ):
-                print(
-                    f"  {path}  {op.upper()}  missing params: {sorted(params)}  ({method_str})"
-                )
+            if missing:
+                print("\nMissing (path, operation):\n")
+                for path, op in sorted(missing):
+                    print(f"  {path}  {op.upper()}")
+            if missing_params_list:
+                print("\nMissing query params (implemented endpoints):\n")
+                for path, op, params, method_str in sorted(
+                    missing_params_list, key=lambda x: (x[0], x[1])
+                ):
+                    print(
+                        f"  {path}  {op.upper()}  missing params: {sorted(params)}  ({method_str})"
+                    )
 
-    sys.exit(EXIT_HAS_MISSING if has_missing else EXIT_OK)
+    sys.exit(0)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        traceback.print_exc(file=sys.stderr)
+        sys.exit(EXIT_ERROR)

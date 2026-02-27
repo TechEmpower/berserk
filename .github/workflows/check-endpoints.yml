@@ -38,29 +38,23 @@ jobs:
           curl -fsSL -o spec/openapi.yaml "https://lichess.org/api/openapi.yaml"
 
       - name: Run check-endpoints
-        id: check
         run: |
-          set +e
-          python check-endpoints.py --json spec/openapi.yaml > output.json 2>stderr.txt
-          EXIT=$?
-          set -e
-          echo "exit_code=$EXIT" >> "$GITHUB_OUTPUT"
-          # Exit 0 so this step is green; exit_code in output drives later steps. Only exit 2 is a real failure.
-          [ "$EXIT" = "2" ] && exit 2 || exit 0
+          python check-endpoints.py --json spec/openapi.yaml > output.json 2>stderr.txt || { cat stderr.txt; exit 1; }
 
-      - name: Fail on script error (exit 2)
-        if: steps.check.outputs.exit_code == '2'
-        run: |
-          echo "check-endpoints.py failed (e.g. spec not found). stderr:"
-          cat stderr.txt
-          exit 1
-
-      - name: Build issue body and create or update issue (missing endpoints)
-        if: steps.check.outputs.exit_code == '1'
+      - name: Update issue from check result
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          BODY=$(python3 - << 'PY'
+          HAS_MISSING=$(python3 -c "
+          import json
+          with open('output.json') as f:
+              data = json.load(f)
+          me = data.get('missing_endpoints') or []
+          mp = data.get('missing_params') or []
+          print('true' if (me or mp) else 'false')
+          ")
+          if [ "$HAS_MISSING" = "true" ]; then
+            BODY=$(python3 - << 'PY'
           import json
           import sys
           with open("output.json") as f:
@@ -87,31 +81,24 @@ jobs:
           sys.stdout.write("".join(parts))
           PY
           )
-          echo "$BODY" > body.md
-          # Find open issue with our title
-          ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
-          if [ -n "$ISSUE_NUM" ]; then
-            gh issue edit "$ISSUE_NUM" --body-file body.md
-            echo "Updated issue #$ISSUE_NUM"
-          else
-            # Reopen if closed: find any issue with that title
-            OLD_NUM=$(gh issue list --repo "${{ github.repository }}" --state all --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
-            if [ -n "$OLD_NUM" ]; then
-              gh issue reopen "$OLD_NUM"
-              gh issue edit "$OLD_NUM" --body-file body.md
-              echo "Reopened and updated issue #$OLD_NUM"
+            echo "$BODY" > body.md
+            ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
+            if [ -n "$ISSUE_NUM" ]; then
+              gh issue edit "$ISSUE_NUM" --body-file body.md
+              echo "Updated issue #$ISSUE_NUM"
             else
-              gh issue create --title "Spec vs implementation: missing endpoints or params (auto-updated)" --body-file body.md
-              echo "Created new issue"
+              OLD_NUM=$(gh issue list --repo "${{ github.repository }}" --state all --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
+              if [ -n "$OLD_NUM" ]; then
+                gh issue reopen "$OLD_NUM"
+                gh issue edit "$OLD_NUM" --body-file body.md
+                echo "Reopened and updated issue #$OLD_NUM"
+              else
+                gh issue create --title "Spec vs implementation: missing endpoints or params (auto-updated)" --body-file body.md
+                echo "Created new issue"
+              fi
             fi
-          fi
-
-      - name: Close issue if no missing endpoints
-        if: steps.check.outputs.exit_code == '0'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python3 - << 'PY'
+          else
+            python3 - << 'PY'
           intro = """This issue is automatically updated by the [check-endpoints](.github/workflows/check-endpoints.yml) workflow. Manual edits to the list below will be overwritten. For historical context and implementation notes, see issue 6.
 
           *Note: The text above and the list below are for testing only (e.g. when this workflow runs on a fork).*
@@ -123,9 +110,10 @@ jobs:
           with open("body.md", "w") as f:
               f.write(intro)
           PY
-          ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
-          if [ -n "$ISSUE_NUM" ]; then
-            gh issue edit "$ISSUE_NUM" --body-file body.md
-            gh issue close "$ISSUE_NUM" --comment "No missing endpoints or params as of this run. This issue will be reopened when the spec gains new endpoints or params we don't implement."
-            echo "Closed issue #$ISSUE_NUM"
+            ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
+            if [ -n "$ISSUE_NUM" ]; then
+              gh issue edit "$ISSUE_NUM" --body-file body.md
+              gh issue close "$ISSUE_NUM" --comment "No missing endpoints or params as of this run. This issue will be reopened when the spec gains new endpoints or params we don't implement."
+              echo "Closed issue #$ISSUE_NUM"
+            fi
           fi
