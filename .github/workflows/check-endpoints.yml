@@ -111,8 +111,21 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          python3 - << 'PY'
+          intro = """This issue is automatically updated by the [check-endpoints](.github/workflows/check-endpoints.yml) workflow. Manual edits to the list below will be overwritten. For historical context and implementation notes, see issue 6.
+
+          *Note: The text above and the list below are for testing only (e.g. when this workflow runs on a fork).*
+
+          ---
+
+          No missing endpoints or params as of this run. This issue will be reopened when the spec gains new endpoints or params we don't implement.
+          """
+          with open("body.md", "w") as f:
+              f.write(intro)
+          PY
           ISSUE_NUM=$(gh issue list --repo "${{ github.repository }}" --state open --limit 1 --json number --jq '.[0].number' --search 'in:title "Spec vs implementation: missing endpoints or params (auto-updated)"' 2>/dev/null || true)
           if [ -n "$ISSUE_NUM" ]; then
-            gh issue close "$ISSUE_NUM" --comment "No missing endpoints or params as of this run. This issue will be reopened when the spec gains new endpoints we don't implement."
+            gh issue edit "$ISSUE_NUM" --body-file body.md
+            gh issue close "$ISSUE_NUM" --comment "No missing endpoints or params as of this run. This issue will be reopened when the spec gains new endpoints or params we don't implement."
             echo "Closed issue #$ISSUE_NUM"
           fi
