@@ -236,6 +236,54 @@ class TestJsonOutput:
         assert data["missing_endpoints"] == [], data
 
 
+class TestDiscoveryCodePaths:
+    """Integration tests: script discovers endpoints for real code patterns (f-string, request(), path=, params var)."""
+
+    def test_fstring_path_discovered(self):
+        """Visitor resolves JoinedStr path (f\"/api/.../{id}\") → normalized /api/.../{}."""
+        spec_path = _FIXTURES / "spec_fstring.yaml"
+        result = _run_script(
+            "--json", "--clients-dir", str(_FAKE_CLIENTS), str(spec_path)
+        )
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert data["missing_endpoints"] == [], data
+
+    def test_request_method_path_discovered(self):
+        """Visitor finds self._r.request(method=\"GET\", path=path)."""
+        spec_path = _FIXTURES / "spec_request_method.yaml"
+        result = _run_script(
+            "--json", "--clients-dir", str(_FAKE_CLIENTS), str(spec_path)
+        )
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert data["missing_endpoints"] == [], data
+
+    def test_path_keyword_discovered(self):
+        """Visitor finds path passed as keyword: self._r.get(path=path)."""
+        spec_path = _FIXTURES / "spec_path_keyword.yaml"
+        result = _run_script(
+            "--json", "--clients-dir", str(_FAKE_CLIENTS), str(spec_path)
+        )
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert data["missing_endpoints"] == [], data
+
+    def test_params_from_variable_discovered(self):
+        """Visitor resolves params=params when params was assigned a dict earlier → missing param 'r' reported."""
+        spec_path = _FIXTURES / "spec_params_variable.yaml"
+        result = _run_script(
+            "--json", "--clients-dir", str(_FAKE_CLIENTS), str(spec_path)
+        )
+        result.check_returncode()
+        data = json.loads(result.stdout)
+        assert data["missing_endpoints"] == [], data
+        assert len(data["missing_params"]) == 1, data
+        item = data["missing_params"][0]
+        assert item["path"] == "/api/dev-tests/params-var"
+        assert item["params"] == ["r"]
+
+
 class TestHumanOutput:
     """Without --json, human-readable output."""
 
